@@ -14,6 +14,330 @@
 <style>:root{--olive:#194536;--olive-2:#0F2E23;--lime:#C4F139;--lime-2:#D5FA6B;--beige:#ECEADE;--coral:#FF4934;--ink:#181717;--muted:#6B7169;--soft:#F5F4EF;--line:rgba(25,69,54,.12);--radius:24px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Manrope','Inter','Noto Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}.nb{white-space:nowrap}h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800}h1{font-size:clamp(34px,6.2vw,66px)}h2{font-size:clamp(28px,4.4vw,46px)}h3{font-size:clamp(19px,2.2vw,23px);line-height:1.25}p{font-size:clamp(15px,1.6vw,17px)}.lime{color:var(--lime)}.sec{padding:clamp(56px,8vw,110px) 0}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}.eyebrow::before{content:"";width:22px;height:1.5px;background:var(--coral);display:block}header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;height:66px}.brand{display:flex;align-items:center;gap:11px;color:var(--olive);text-decoration:none}.brand svg{height:19px;width:auto;display:block}.brand span{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-left:11px;border-left:1px solid var(--line)}.nav-links{display:none;gap:26px}.nav-links a{color:var(--ink);text-decoration:none;font-size:14.5px;font-weight:600;opacity:.72}.nav-links a:hover{opacity:1;color:var(--olive)}@media(min-width:940px){.nav-links{display:flex}}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;border-radius:100px;font-weight:700;font-size:15.5px;text-decoration:none;border:none;cursor:pointer;transition:.18s ease;white-space:nowrap}.btn-lime{background:var(--lime);color:var(--olive)}.btn-lime:hover{background:var(--lime-2);transform:translateY(-2px)}.btn-olive{background:var(--olive);color:#fff}.btn-olive:hover{background:var(--olive-2);transform:translateY(-2px)}.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.32)}.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}.btn-sm{padding:11px 20px;font-size:14px}.btn svg{width:18px;height:18px;flex:none}.hero{background:var(--olive);color:#fff;position:relative;overflow:hidden}.hero::after{content:"";position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(196,241,57,.16),transparent 68%);top:-260px;right:-200px;pointer-events:none}.hero-in{padding-top:clamp(52px,7vw,92px);position:relative;z-index:2}.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(196,241,57,.13);border:1px solid rgba(196,241,57,.34);color:var(--lime);padding:8px 16px;border-radius:100px;font-size:13px;font-weight:700;margin-bottom:26px}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}.hero h1{max-width:16ch}.hero h1 em{font-style:normal;color:var(--lime)}.hero-lead{font-size:clamp(16px,2.1vw,20px);color:rgba(255,255,255,.82);max-width:52ch;margin:24px 0 34px}.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}.hero-note{font-size:13.5px;color:rgba(255,255,255,.55)}.audience{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}.audience span{font-size:13px;font-weight:600;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:100px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);margin-top:clamp(44px,6vw,72px);border-top:1px solid rgba(255,255,255,.14)}@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}.stat{background:var(--olive);padding:26px 18px 30px}.stat b{display:block;font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.03em;color:var(--lime)}.stat small{display:block;font-size:13px;color:rgba(255,255,255,.62);margin-top:7px;line-height:1.4}.grid{display:grid;gap:16px}@media(min-width:700px){.grid-2{grid-template-columns:1fr 1fr}}@media(min-width:980px){.grid-4{grid-template-columns:repeat(2,1fr)}}@media(min-width:1100px){.grid-4{grid-template-columns:repeat(4,1fr)}}.card{background:var(--soft);border-radius:var(--radius);padding:30px 26px 32px;border:1px solid var(--line);transition:.2s ease}.card:hover{transform:translateY(-3px);border-color:rgba(25,69,54,.28)}.card .num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:var(--lime);color:var(--olive);font-weight:800;font-size:15px;margin-bottom:18px}.card h3{margin-bottom:10px}.card p{color:var(--muted);font-size:15.5px}.card p b{color:var(--olive)}a.inl,.about-card a,.brands p a{color:var(--olive);font-weight:700;text-decoration:none;border-bottom:1.5px solid rgba(25,69,54,.28);white-space:nowrap}a.inl:hover,.about-card a:hover,.brands p a:hover{border-color:var(--coral);color:var(--coral)}.dd{display:grid;gap:16px}@media(min-width:820px){.dd{grid-template-columns:1fr 1fr}}.dd-box{border-radius:var(--radius);padding:32px 28px 34px}.dd-yes{background:var(--olive);color:#fff}.dd-no{background:var(--beige)}.dd-box h3{margin-bottom:20px;font-size:22px}.dd-box ul{list-style:none;display:grid;gap:13px}.dd-box li{display:flex;gap:12px;font-size:15.5px;line-height:1.45}.ic{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;margin-top:1px;font-size:13px;font-weight:800}.dd-yes .ic{background:var(--lime);color:var(--olive)}.dd-no .ic{background:#fff;color:var(--coral);border:1px solid rgba(255,73,52,.3)}.dd-yes li{color:rgba(255,255,255,.9)}.dd-no li{color:#3B4038}.dd-tag{display:inline-block;margin-top:24px;font-size:13.5px;font-weight:700;padding:9px 16px;border-radius:100px}.dd-yes .dd-tag{background:rgba(255,255,255,.1);color:var(--lime)}.dd-no .dd-tag{background:#fff;color:var(--olive)}.calc{background:var(--beige)}.calc-box{background:#fff;border-radius:var(--radius);padding:clamp(26px,4vw,46px);display:grid;gap:34px;border:1px solid var(--line)}@media(min-width:900px){.calc-box{grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}}.field{margin-bottom:28px}.field-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;gap:12px}.field-top label{font-size:14.5px;font-weight:600;color:var(--muted)}.field-top output{font-size:21px;font-weight:800;color:var(--olive);letter-spacing:-.02em}input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:100px;background:linear-gradient(90deg,var(--olive) var(--p,30%),rgba(25,69,54,.14) var(--p,30%));outline:none;cursor:pointer}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--lime);border:3px solid var(--olive);cursor:grab}input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--lime);border:3px solid var(--olive);cursor:grab}.calc-hint{font-size:13px;color:var(--muted);margin-top:10px}.calc-out{background:var(--olive);border-radius:20px;padding:34px 28px;color:#fff;text-align:center}.calc-out small{display:block;font-size:13.5px;color:rgba(255,255,255,.62);letter-spacing:.04em}.calc-out .big{font-size:clamp(38px,6vw,56px);font-weight:800;color:var(--lime);letter-spacing:-.035em;line-height:1.05;margin:10px 0 4px}.calc-out .sub{font-size:14px;color:rgba(255,255,255,.7);padding-top:16px;margin-top:16px;border-top:1px solid rgba(255,255,255,.16)}.calc-out .sub b{color:#fff}.special{background:var(--olive);color:#fff;border-radius:var(--radius);padding:clamp(30px,4.4vw,52px);display:grid;gap:28px;position:relative;overflow:hidden}@media(min-width:860px){.special{grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}}.special::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(196,241,57,.15),transparent 70%);bottom:-220px;left:-120px}.special>*{position:relative;z-index:2}.special h2{margin-bottom:14px}.special p{color:rgba(255,255,255,.8);max-width:46ch}.price-card{background:var(--lime);color:var(--olive);border-radius:20px;padding:28px 26px;text-align:center}.price-card .old{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.62}.price-card .new{font-size:clamp(40px,6.4vw,54px);font-weight:800;letter-spacing:-.035em;line-height:1;margin:6px 0}.price-card .lbl{font-size:14.5px;font-weight:700}.price-card .kk{display:inline-block;margin-top:16px;background:var(--olive);color:var(--lime);font-size:13px;font-weight:700;padding:8px 16px;border-radius:100px}.about{display:grid;gap:16px}@media(min-width:860px){.about{grid-template-columns:repeat(3,1fr)}}.about-card{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:#fff}.about-card b{display:block;font-size:clamp(30px,4vw,40px);font-weight:800;color:var(--olive);letter-spacing:-.03em;line-height:1}.about-card h3{margin:14px 0 8px;font-size:19px}.about-card p{color:var(--muted);font-size:15px}.brands{margin-top:22px;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(26px,3.6vw,40px)}.brands h3{margin-bottom:6px}.brands>p{color:var(--muted);font-size:15px;margin-bottom:24px}.brand-list{display:flex;flex-wrap:wrap;gap:10px}.brand-list span{background:#fff;border:1px solid var(--line);border-radius:100px;padding:11px 20px;font-weight:700;font-size:15px;color:var(--olive)}.certs{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}.certs p{font-size:15px;color:var(--muted);max-width:56ch}.certs p b{color:var(--olive)}.terms{background:var(--beige)}.terms-in{display:grid;gap:16px}@media(min-width:820px){.terms-in{grid-template-columns:1fr 1fr}}.term{background:#fff;border-radius:var(--radius);padding:32px 28px;border:1px solid var(--line)}.term .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 13px;border-radius:100px;margin-bottom:16px}.tag-now{background:var(--lime);color:var(--olive)}.tag-next{background:var(--olive);color:var(--lime)}.term p{color:var(--muted);margin-top:10px}details{border-bottom:1px solid var(--line);padding:22px 0;cursor:pointer}details summary{list-style:none;font-weight:700;font-size:clamp(16px,2vw,18.5px);display:flex;justify-content:space-between;gap:20px;align-items:flex-start;color:var(--olive)}details summary::-webkit-details-marker{display:none}details summary::after{content:"+";flex:none;font-size:26px;font-weight:400;line-height:1;color:var(--coral);transition:.2s}details[open] summary::after{transform:rotate(45deg)}details p{margin-top:13px;color:var(--muted);max-width:74ch;font-size:15.5px}.final{background:var(--olive);color:#fff;text-align:center;position:relative;overflow:hidden}.final::after{content:"";position:absolute;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(196,241,57,.14),transparent 68%);bottom:-460px;left:50%;transform:translateX(-50%)}.final-in{position:relative;z-index:2}.final h2{max-width:18ch;margin:0 auto 18px}.final p{color:rgba(255,255,255,.78);max-width:50ch;margin:0 auto 32px}.final .btn{font-size:17px;padding:18px 34px}.phone{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:#fff;text-decoration:none;font-size:17px;font-weight:700}.phone:hover{color:var(--lime)}.phone svg{width:20px;height:20px;flex:none}.final small{display:block;margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.5)}footer{background:var(--olive-2);color:rgba(255,255,255,.5);padding:30px 0 100px;font-size:13.5px}@media(min-width:860px){footer{padding-bottom:30px}}.foot{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}.foot svg{height:17px;width:auto;color:rgba(255,255,255,.65)}.foot a{color:rgba(255,255,255,.72);text-decoration:none}.foot a:hover{color:var(--lime)}.sticky{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:12px 16px;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:block}.sticky .btn{width:100%}@media(min-width:860px){.sticky{display:none}}.reveal{opacity:0;transform:translateY(22px);transition:.6s cubic-bezier(.2,.7,.3,1)}.reveal.in{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}</style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 66 17"><path d="M18.2065 9.82393C17.972 9.80715 17.7828 9.69739 17.6366 9.49595C17.4903 9.29581 17.4247 9.05434 17.4399 8.77414C17.4689 8.47714 17.5634 8.24472 17.7248 8.07944C17.885 7.91286 18.0905 7.83022 18.3389 7.83022H18.4045C18.5356 7.83022 18.7474 7.82635 19.0399 7.81731C19.3325 7.80827 19.6464 7.80052 19.9818 7.79148C20.3172 7.78245 20.6614 7.7747 21.012 7.76566C21.3625 7.75662 21.6689 7.75275 21.9324 7.75275C22.5465 7.75275 22.9991 7.87542 23.2904 8.11947C23.5829 8.36481 23.7254 8.63597 23.7178 8.93296C23.7103 9.22995 23.5564 9.50112 23.2576 9.74646C22.9575 9.9918 22.5086 10.1132 21.9097 10.1132C21.6323 10.1132 21.3108 10.1003 20.9451 10.0731C20.5795 10.0473 20.2176 10.0215 19.8608 9.99438C19.5027 9.96855 19.1736 9.93756 18.8748 9.9027C18.5747 9.86784 18.3528 9.84201 18.2065 9.82393Z" fill="currentColor"/><path d="M34.7531 14.2943C32.4911 17.1402 27.7123 18.3476 25.9862 14.3446C25.1805 11.6834 26.2472 8.77284 27.0731 6.22906C27.6379 4.61239 28.3037 2.9415 29.1989 1.47979C29.5797 0.776052 30.1547 -0.138162 31.0638 0.0606923C31.843 0.20144 32.3259 1.0343 32.2238 1.81165C32.1002 2.60061 31.6854 3.37278 31.461 4.17207C30.717 6.38917 29.6352 8.4242 29.1939 10.7407C28.8232 12.4891 29.4044 13.8101 31.379 13.2509C32.597 12.9694 33.7167 12.1805 34.9284 12.0152C36.3393 12.0191 35.3848 13.5376 34.796 14.2439L34.7557 14.2943H34.7531Z" fill="currentColor"/><path d="M37.0403 14.169C37.1638 11.7996 37.9279 9.39395 38.8383 7.20655C39.2947 6.21615 39.8218 5.14957 40.8961 4.86807C42.2339 4.55042 43.0131 5.94757 42.7899 7.17814C42.4949 9.03369 41.8619 10.9344 41.5051 12.7732C41.263 13.854 41.0802 15.0226 40.4346 15.9381C38.8837 17.9821 36.9104 16.5075 37.0403 14.2323V14.169ZM41.4925 0.304748C43.8995 -1.00718 45.2991 2.68067 43.2653 3.98485C40.9755 5.218 38.9656 1.51079 41.442 0.330573L41.4925 0.304748Z" fill="currentColor"/><path d="M53.0789 7.27111C53.4307 6.69908 53.9325 6.32461 54.4722 5.95144C54.6626 5.82231 54.8669 5.76679 55.056 5.84684C55.6171 6.1051 55.3271 6.99607 55.3233 7.49062C54.9703 8.70183 54.2805 9.80069 53.8203 10.9499C52.9415 12.8597 51.9454 14.8418 50.2873 16.1201C48.8675 17.2978 46.5097 17.2022 45.4997 15.5274C44.6057 14.1755 44.4796 12.4387 44.4633 10.8298C44.4633 9.79294 44.5465 8.77285 44.6738 7.76308C44.781 7.07484 44.752 6.32978 45.2437 5.78486C46.0545 4.76864 47.7756 5.06305 48.2358 6.28716C48.6519 7.91674 48.4842 9.51403 48.6595 11.172C48.8411 13.353 49.9847 11.6356 50.576 10.7511C51.3565 9.55019 52.253 8.51072 53.0449 7.32405L53.0802 7.27369L53.0789 7.27111Z" fill="currentColor"/><path d="M60.8837 13.1619C61.3653 12.9824 61.8218 12.7732 62.253 12.533C62.6842 12.2941 62.9793 12.1366 63.1407 12.0617C63.2718 12.0023 63.4218 11.9313 63.5895 11.8487C63.7572 11.766 63.9325 11.6847 64.1153 11.602C64.2982 11.5194 64.481 11.4522 64.6638 11.4006C64.8467 11.3489 65.0181 11.3218 65.1783 11.3218C65.2955 11.3218 65.4115 11.3412 65.5288 11.3786C65.6461 11.4161 65.7406 11.4871 65.8138 11.5917C65.9449 11.7415 66.0067 11.9248 66.0004 12.1418C65.9928 12.3587 65.9461 12.5834 65.8579 12.8158C65.7709 13.0482 65.6637 13.2729 65.5401 13.4886C65.4166 13.7055 65.2955 13.8888 65.1783 14.0386C64.8719 14.4583 64.4873 14.847 64.0271 15.2059C63.5668 15.5649 63.0738 15.8684 62.548 16.115C62.0223 16.3616 61.4775 16.5566 60.9152 16.6986C60.3528 16.8407 59.8157 16.9117 59.305 16.9117C58.8234 16.9117 58.3594 16.8523 57.913 16.7322C57.4667 16.6121 57.0695 16.4184 56.719 16.1486C56.3684 15.88 56.0797 15.5352 55.8527 15.1168C55.6258 14.6985 55.4833 14.1897 55.4253 13.5906C55.3522 12.8132 55.4177 11.9597 55.622 11.0326C55.8262 10.1054 56.1364 9.20286 56.5538 8.32867C56.9699 7.45319 57.4704 6.65261 58.0555 5.92692C58.6393 5.20123 59.2748 4.65115 59.962 4.27798C60.2835 4.09849 60.6378 3.96033 61.0249 3.86219C61.412 3.76535 61.8029 3.71628 62.1975 3.71628C62.5922 3.71628 62.9969 3.76922 63.3701 3.87252C63.7434 3.97711 64.0599 4.14239 64.3234 4.36707C64.5869 4.59175 64.776 4.87971 64.8933 5.23093C65.0106 5.58344 65.0169 6.00569 64.9147 6.49895C64.7533 7.23239 64.5163 7.86769 64.2023 8.40615C63.8884 8.9446 63.5404 9.38621 63.1608 9.72969C62.7813 10.0745 62.3791 10.3288 61.9554 10.4928C61.5318 10.6581 61.1232 10.7395 60.7286 10.7395C60.2898 10.7395 59.9178 10.6504 59.6114 10.4696C59.392 10.8286 59.2206 11.1849 59.097 11.5362C58.9722 11.8874 58.9104 12.1986 58.9104 12.4672C58.9104 12.7358 58.9873 12.9578 59.1411 13.1296C59.295 13.3013 59.532 13.3878 59.8535 13.3878C60.1461 13.3878 60.489 13.3129 60.8837 13.1632V13.1619ZM60.7298 8.71734C60.9051 8.71734 61.0879 8.65019 61.2771 8.5159C61.4662 8.38161 61.6465 8.21246 61.8142 8.01102C61.9819 7.80958 62.1282 7.59911 62.253 7.38217C62.3766 7.16524 62.4686 6.96639 62.5266 6.7869C62.3223 6.7727 62.0878 6.83597 61.8256 6.97801C61.562 7.12005 61.3212 7.29179 61.1018 7.49451C60.8824 7.69595 60.7147 7.90643 60.5974 8.12336C60.4802 8.34029 60.4663 8.5159 60.5533 8.65019C60.5974 8.69539 60.6555 8.71734 60.7286 8.71734H60.7298Z" fill="currentColor"/><path d="M14.8855 4.22767C13.5061 -0.198779 8.19143 -1.2744 4.00653 1.59608L3.9851 1.61028C0.261693 4.14116 -0.673887 8.43073 0.443261 12.1095C1.26536 15.2628 3.28909 17.3469 6.83093 16.8162C8.82818 16.5347 10.9276 15.6773 12.4709 14.1252C15.0091 11.4807 15.8236 7.29958 14.8842 4.22638L14.8855 4.22767ZM12.5743 2.69881C12.1557 3.31216 11.3827 3.47099 11.273 4.28319C11.2314 4.59051 11.2819 4.89009 11.3247 5.1845C11.3487 5.35753 11.4912 6.18135 11.2163 6.2769C11.1709 6.2924 11.1293 6.27174 11.0927 6.24979C10.9856 6.17877 10.8998 6.08192 10.8179 5.98379C10.5152 5.62223 10.2845 5.20516 9.98189 4.84489C9.89363 4.7403 9.79276 4.64346 9.66163 4.59955C9.50023 4.54532 9.30858 4.57889 9.13079 4.64475C8.73865 4.78937 8.35534 5.07345 7.94555 5.11606C7.85855 5.1251 7.75516 5.11089 7.7312 5.02954C7.72112 4.99468 7.72742 4.95465 7.73877 4.91591C7.8346 4.57115 8.17251 4.32839 8.41208 4.0753C8.68696 3.78735 8.94544 3.48003 9.15979 3.14559C9.26066 2.99064 9.3111 2.85635 9.33127 2.72722C9.36279 2.54128 9.33127 2.36438 9.30479 2.1397C9.27705 1.92406 9.21905 1.53151 9.52041 1.42692C9.94911 1.27843 10.287 1.94472 10.5115 2.17714C10.7788 2.45347 11.1167 2.58647 11.5265 2.53612C11.8493 2.49609 12.2439 2.44056 12.5465 2.51933C12.5692 2.52449 12.5932 2.53353 12.6071 2.5529C12.6348 2.59293 12.6071 2.65491 12.5743 2.70011V2.69881Z" fill="currentColor"/></symbol></svg>
+<header>
+<div class="wrap nav">
+<a href="#top" class="brand" aria-label="O-Live">
+<svg viewBox="0 0 66 17" role="img" aria-label="O-Live"><use href="#lg"/></svg>
+<span>Партнёрам</span>
+</a>
+<nav class="nav-links">
+<a href="#usloviya">Условия</a>
+<a href="#kalkulyator">Калькулятор</a>
+<a href="#kak">Как это работает</a>
+<a href="#o-nas">О нас</a>
+<a href="#faq">Вопросы</a>
+</nav>
+<a class="btn btn-olive btn-sm" href="https://docs.google.com/forms/d/e/1FAIpQLSdZClL1smIxvYLRg3mGkUNkN1mcVgwNu3LxgVhnO8GWI70ESw/viewform" target="_blank" rel="noopener">Заполнить анкету</a>
+</div>
+</header>
+<section class="hero" id="top">
+<div class="wrap hero-in">
+<div class="badge"><span class="dot"></span> Набор амбассадоров открыт · тест-месяц</div>
+<h1>Рассказывайте о <span class="nb">O-Live</span> и получайте <em>10%</em> с каждой продажи</h1>
+<p class="hero-lead">
+Мы ищем бренд-амбассадоров нашей продукции. Вы рассказываете о <span class="nb">O-Live</span> своей аудитории —
+мы платим 10% со всех заказов, которые пришли по вашей ссылке.
+Никакого плана продаж и согласований контента — вы сами решаете, что и как снимать.
+</p>
+<div class="hero-cta">
+<a class="btn btn-lime" href="https://docs.google.com/forms/d/e/1FAIpQLSdZClL1smIxvYLRg3mGkUNkN1mcVgwNu3LxgVhnO8GWI70ESw/viewform" target="_blank" rel="noopener">Заполнить анкету — 2 минуты</a>
+<a class="btn btn-ghost" href="#kalkulyator">Посчитать доход</a>
+</div>
+<p class="hero-note">Мы читаем каждую анкету и отвечаем тем, кто нам подходит</p>
+<div class="audience">
+<span>Блогеры</span>
+<span>Тренеры</span>
+<span>Нутрициологи и диетологи</span>
+<span>UGC-креаторы</span>
+<span>Косметологи и мастера</span>
+<span>Все, у кого есть аудитория</span>
+</div>
+<div class="stats">
+<div class="stat"><b>1&nbsp;000+</b><small>заказов доставлено</small></div>
+<div class="stat"><b>15&nbsp;000</b><small>заказов в сутки — мощность завода</small></div>
+<div class="stat"><b>79&nbsp;000&nbsp;₸</b><small>средний заказ на сервисе</small></div>
+<div class="stat"><b>7&nbsp;900&nbsp;₸</b><small>ваши с одного такого заказа</small></div>
+</div>
+</div>
+</section>
+<section class="sec" id="usloviya">
+<div class="wrap">
+<div class="eyebrow reveal">Что вы получаете</div>
+<h2 class="reveal" style="max-width:19ch;margin-bottom:14px">Четыре причины, ради которых это стоит попробовать</h2>
+<p class="reveal" style="color:var(--muted);max-width:56ch;margin-bottom:38px">
+Мы не просим у вас денег, охватов и обещаний — и не просим ничего у нас покупать. Мы даём инструмент, который считает ваши продажи, и платим процент.
+</p>
+<div class="grid grid-4">
+<div class="card reveal">
+<div class="num">10%</div>
+<h3>Процент с каждой продажи</h3>
+<p>10% со всей суммы заказа, который пришёл по вашей ссылке. Средний заказ у нас — <b>79 000 ₸</b>, это около <b>7 900 ₸</b> вам за одного клиента.</p>
+</div>
+<div class="card reveal">
+<div class="num">01</div>
+<h3>Личная страница со ссылкой</h3>
+<p>Мы делаем вам <b>отдельный сайт <span class="nb">O-Live</span> с вашей ссылкой</b>. Все заказы с неё автоматически закрепляются за вами.</p>
+</div>
+<div class="card reveal">
+<div class="num">02</div>
+<h3>Полная оцифровка заказов</h3>
+<p>Видно каждый заказ: кто, когда и на какую сумму. <b>Никаких «мы посчитаем сами»</b> — цифры одинаковые у вас и у нас.</p>
+</div>
+<div class="card reveal">
+<div class="num">03</div>
+<h3>Свобода в контенте</h3>
+<p>Сторис, рилс, пост, рассылка или просто рекомендация друзьям. <b>Формат и подача — полностью ваши.</b></p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" style="padding-top:0">
+<div class="wrap">
+<div class="dd">
+<div class="dd-box dd-yes reveal">
+<h3>Что нужно от вас</h3>
+<ul>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Рассказать своей аудитории о <span class="nb">O-Live</span> — так, как вам самим нравится</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Сделать фото, сторис или короткое видео своими руками</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Делиться личной ссылкой — в профиле, в сторис, в переписке, в рассылке</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Говорить своими словами, без рекламных штампов</span></li>
+</ul>
+<span class="dd-tag">Всё остальное — на нашей стороне</span>
+</div>
+<div class="dd-box dd-no reveal">
+<h3>Чего делать НЕ нужно</h3>
+<ul>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Заказывать и пробовать наше питание — это не условие сотрудничества</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Согласовывать с нами каждый пост и текст</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Выполнять план продаж и отчитываться по охватам</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Ждать от нас макеты и брифы — снимайте своими руками</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Считать заказы вручную — за вас это делает система</span></li>
+</ul>
+<span class="dd-tag">Никаких обязательств и отчётов</span>
+</div>
+</div>
+</div>
+</section>
+<section class="sec calc" id="kalkulyator">
+<div class="wrap">
+<div class="eyebrow reveal">Калькулятор</div>
+<h2 class="reveal" style="margin-bottom:14px">Сколько это в деньгах</h2>
+<p class="reveal" style="color:var(--muted);max-width:56ch;margin-bottom:34px">
+Подвиньте ползунки и посмотрите свой доход. По умолчанию стоит наш реальный средний заказ.
+</p>
+<div class="calc-box reveal">
+<div>
+<div class="field">
+<div class="field-top">
+<label for="ord">Заказов в месяц по вашей ссылке</label>
+<output id="ordOut">5</output>
+</div>
+<input type="range" id="ord" min="1" max="40" value="5" step="1">
+<p class="calc-hint">Достаточно, чтобы вас услышали несколько десятков человек.</p>
+</div>
+<div class="field" style="margin-bottom:0">
+<div class="field-top">
+<label for="chk">Средний заказ</label>
+<output id="chkOut">79 000 ₸</output>
+</div>
+<input type="range" id="chk" min="15000" max="150000" value="79000" step="1000">
+<p class="calc-hint">Реальный средний чек на сервисе сейчас — 79 000 ₸.</p>
+</div>
+</div>
+<div class="calc-out">
+<small>ВАШ ДОХОД В МЕСЯЦ</small>
+<div class="big" id="res">39 500 ₸</div>
+<small>это 10% с оборота <span id="turn">395 000 ₸</span></small>
+<div class="sub">За тест-месяц и следующие 3 месяца — <b id="res3">158 000 ₸</b></div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" id="kak" style="padding-top:clamp(30px,4vw,56px)">
+<div class="wrap">
+<div class="eyebrow reveal">Как это работает</div>
+<h2 class="reveal" style="margin-bottom:38px;max-width:16ch">Четыре шага от анкеты до первых денег</h2>
+<div class="grid grid-4">
+<div class="card reveal">
+<div class="num">1</div>
+<h3>Заполняете анкету</h3>
+<p>10 коротких вопросов о вас и вашей аудитории — займёт пару минут. Ничего прикреплять не нужно.</p>
+</div>
+<div class="card reveal">
+<div class="num">2</div>
+<h3>Мы рассматриваем анкету</h3>
+<p>Отбор есть: мы смотрим на аудиторию и подачу. <b>Если вы нам подходите — обязательно свяжемся с вами.</b></p>
+</div>
+<div class="card reveal">
+<div class="num">3</div>
+<h3>Получаете личную ссылку</h3>
+<p>Мы делаем вам <b>персональную страницу <span class="nb">O-Live</span></b>. С этого момента каждый заказ по ней закреплён за вами.</p>
+</div>
+<div class="card reveal">
+<div class="num">4</div>
+<h3>Рассказываете и получаете 10%</h3>
+<p>Сторис, рилс, пост или личная рекомендация — с каждого оплаченного заказа по вашей ссылке ваши 10%.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" id="o-nas" style="padding-top:0">
+<div class="wrap">
+<div class="eyebrow reveal">О компании</div>
+<h2 class="reveal" style="margin-bottom:14px">Кому вы будете рекомендовать</h2>
+<p class="reveal" style="color:var(--muted);max-width:58ch;margin-bottom:34px">
+Репутация — ваш главный актив, поэтому вот факты о нас, которые можно проверить.
+</p>
+<div class="about">
+<div class="about-card reveal">
+<b>1+ год</b>
+<h3>На рынке</h3>
+<p>Мы работаем больше года: больше 1 000 доставленных заказов и клиенты, которые возвращаются снова. <a href="https://olive.kz/l/new" target="_blank" rel="noopener">Посмотреть сайт <span class="nb">O-Live</span> →</a></p>
+</div>
+<div class="about-card reveal">
+<b>Свой</b>
+<h3>Завод-производство</h3>
+<p>Мощность — до 15 000 заказов в сутки. За нами реальное производство, а не арендованная кухня на пару человек.</p>
+</div>
+<div class="about-card reveal">
+<b>8</b>
+<h3>Крупных брендов-партнёров</h3>
+<p>Наша продукция поставляется в крупные сети и сервисы — им мы подходим по качеству и документам.</p>
+</div>
+</div>
+<div class="brands reveal">
+<h3>Мы производим и поставляем продукцию для</h3>
+<p>Эти компании выбрали нас как поставщика — значит, наше производство прошло их проверки. <a href="https://halaldamu.kz/company/segodnya-magnum-chef-vkusvill-continent-picasso-lukoil-yandeks-lavka/" target="_blank" rel="noopener">Подтверждение на halaldamu.kz →</a></p>
+<div class="brand-list">
+<span>Magnum</span>
+<span>Magnum Chef</span>
+<span>ВкусВилл</span>
+<span>Continent</span>
+<span>Picasso</span>
+<span>Lukoil</span>
+<span>Яндекс Лавка</span>
+<span>Сегодня</span>
+</div>
+<div class="certs">
+<p><b>Сертификаты и документы на продукцию у нас есть.</b> Отметьте это в анкете — пришлём вместе с ответом, чтобы вы были спокойны за свою рекомендацию.</p>
+<a class="btn btn-olive btn-sm" href="https://docs.google.com/forms/d/e/1FAIpQLSdZClL1smIxvYLRg3mGkUNkN1mcVgwNu3LxgVhnO8GWI70ESw/viewform" target="_blank" rel="noopener">Заполнить анкету</a>
+</div>
+</div>
+</div>
+</section>
+<section class="sec terms">
+<div class="wrap">
+<div class="eyebrow reveal">Формат сотрудничества</div>
+<h2 class="reveal" style="margin-bottom:34px;max-width:18ch">Начинаем с тест-месяца — без долгих обязательств</h2>
+<div class="terms-in">
+<div class="term reveal">
+<span class="tag tag-now">Сейчас</span>
+<h3>Тест-месяц</h3>
+<p>Работаем месяц на условиях 10% с продаж. Вы ничем не рискуете и ничего не вкладываете — просто пробуете формат и смотрите на реальные цифры в своей статистике.</p>
+</div>
+<div class="term reveal">
+<span class="tag tag-next">Дальше</span>
+<h3>Продление на 3 месяца</h3>
+<p>Если сотрудничество идёт хорошо, продлеваем на 3 месяца и обсуждаем условия лучше. Долгосрочные амбассадоры для нас приоритетны.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" id="faq">
+<div class="wrap" style="max-width:900px">
+<div class="eyebrow reveal">Вопросы</div>
+<h2 class="reveal" style="margin-bottom:28px">Что обычно спрашивают</h2>
+<details class="reveal"><summary>Нужно ли самому пробовать ваше питание?</summary>
+<p>Нет. Вы ничего не обязаны заказывать и пробовать — сотрудничество никак не связано с покупкой. Если захотите попробовать для себя, просто оформляете заказ как обычный клиент, отдельно.</p></details>
+<details class="reveal"><summary>Берёте всех или есть отбор?</summary>
+<p>Отбор есть. Мы читаем каждую анкету и смотрим на аудиторию, подачу и совпадение по ценностям. Если вы нам подходите — обязательно свяжемся с вами.</p></details>
+<details class="reveal"><summary>А если у меня немного подписчиков?</summary>
+<p>Мы смотрим не на цифру подписчиков, а на доверие вашей аудитории. У аккаунта на 2 000 живых подписчиков продажи часто выше, чем у аккаунта на 50 000. Заполняйте анкету — обсудим.</p></details>
+<details class="reveal"><summary>Как я пойму, что заказ засчитан именно мне?</summary>
+<p>У вас будет персональная страница <span class="nb">O-Live</span> со своей ссылкой. Все заказы, оформленные с неё, автоматически закрепляются за вами и видны в статистике — с суммой и датой. Считать вручную ничего не нужно.</p></details>
+<details class="reveal"><summary>10% — это с чего именно?</summary>
+<p>С полной суммы оплаченного заказа, который пришёл по вашей ссылке. Не с первого дня, не с наценки — со всего заказа.</p></details>
+<details class="reveal"><summary>Можно рекомендовать не публично, а друзьям и знакомым?</summary>
+<p>Да. Публичный контент, личная рассылка, чат или разговор один на один — способ выбираете вы. Ссылка работает одинаково.</p></details>
+<details class="reveal"><summary>Как убедиться, что вам можно доверять?</summary>
+<p>Посмотрите наш основной сайт <a class="inl" href="https://olive.kz/l/new" target="_blank" rel="noopener">olive.kz</a> и наш Instagram <a class="inl" href="https://instagram.com/o_live.kz" target="_blank" rel="noopener">@o_live.kz</a>. Информация о том, что мы производим продукцию для Magnum, Magnum Chef, ВкусВилл, Continent, Picasso, Lukoil и Яндекс Лавки, есть <a class="inl" href="https://halaldamu.kz/company/segodnya-magnum-chef-vkusvill-continent-picasso-lukoil-yandeks-lavka/" target="_blank" rel="noopener">на halaldamu.kz</a>. Сертификаты пришлём по запросу.</p></details>
+<details class="reveal"><summary>Вы даёте готовые макеты и тексты?</summary>
+<p>Нет — и это осознанно. Ваш контент, снятый вашими руками, работает лучше брендовых баннеров. Если нужно, поделимся фактами о продукте и составом рационов.</p></details>
+<details class="reveal"><summary>Есть ли сертификаты на продукцию?</summary>
+<p>Да. Отметьте это в анкете — пришлём документы вместе с ответом, чтобы вы были уверены в том, что рекомендуете.</p></details>
+<details class="reveal"><summary>Как и когда происходят выплаты?</summary>
+<p>График и способ выплат обсуждаем лично, когда договоримся о старте — подстраиваемся под удобный вам формат. Все начисления при этом видны в вашей статистике.</p></details>
+</div>
+</section>
+<section class="sec final">
+<div class="wrap final-in">
+<h2>Набор открыт. Отвечаем всем, кто нам подходит</h2>
+<p>Заполните анкету — это 2 минуты и 10 вопросов. Мы прочитаем её и свяжемся с вами.</p>
+<a class="btn btn-lime" href="https://docs.google.com/forms/d/e/1FAIpQLSdZClL1smIxvYLRg3mGkUNkN1mcVgwNu3LxgVhnO8GWI70ESw/viewform" target="_blank" rel="noopener">Заполнить анкету</a>
+<small>Отвечаем в течение 1–2 рабочих дней</small>
+</div>
+</section>
+<footer>
+<div class="wrap foot">
+<svg viewBox="0 0 66 17" role="img" aria-label="O-Live"><use href="#lg"/></svg>
+<span>Партнёрская программа <span class="nb">O-Live</span> · Алматы</span>
+<span><a href="https://instagram.com/o_live.kz" target="_blank" rel="noopener">@o_live.kz</a> &nbsp;·&nbsp; <a href="https://olive.kz/l/new" target="_blank" rel="noopener">olive.kz</a></span>
+</div>
+</footer>
+<div class="sticky">
+<a class="btn btn-olive" href="https://docs.google.com/forms/d/e/1FAIpQLSdZClL1smIxvYLRg3mGkUNkN1mcVgwNu3LxgVhnO8GWI70ESw/viewform" target="_blank" rel="noopener">Заполнить анкету</a>
+</div>
+<script>
+(function(){
+var fmt = function(n){ return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+var ord = document.getElementById('ord'), chk = document.getElementById('chk');
+var ordOut = document.getElementById('ordOut'), chkOut = document.getElementById('chkOut');
+var res = document.getElementById('res'), turn = document.getElementById('turn'), res3 = document.getElementById('res3');
+function paint(el){
+var p = (el.value - el.min) / (el.max - el.min) * 100;
+el.style.setProperty('--p', p + '%');
+}
+function calc(){
+var o = +ord.value, c = +chk.value;
+var t = o * c, income = t * 0.10;
+ordOut.textContent = o;
+chkOut.textContent = fmt(c) + ' ₸';
+turn.textContent = fmt(t) + ' ₸';
+res.textContent = fmt(income) + ' ₸';
+res3.textContent = fmt(income * 4) + ' ₸';
+paint(ord); paint(chk);
+}
+ord.addEventListener('input', calc);
+chk.addEventListener('input', calc);
+calc();
+var io = new IntersectionObserver(function(es){
+es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el, i){
+el.style.transitionDelay = (i % 4) * 60 + 'ms';
+io.observe(el);
+});
+})();
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бренд-амбассадоры O-Live — 10% с каждой продажи</title>
+<meta name="description" content="O-Live ищет бренд-амбассадоров: блогеров, тренеров, нутрициологов и UGC-креаторов. Платим 10% с каждой продажи. Личная страница со своей ссылкой и прозрачная статистика заказов. Тестовый месяц с продлением.">
+<meta property="og:title" content="Бренд-амбассадоры O-Live — 10% с каждой продажи">
+<meta property="og:description" content="Рассказывайте о питании O-Live и получайте 10% с каждого заказа по вашей ссылке. Тестовый месяц, без плана продаж.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>:root{--olive:#194536;--olive-2:#0F2E23;--lime:#C4F139;--lime-2:#D5FA6B;--beige:#ECEADE;--coral:#FF4934;--ink:#181717;--muted:#6B7169;--soft:#F5F4EF;--line:rgba(25,69,54,.12);--radius:24px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Manrope','Inter','Noto Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}.nb{white-space:nowrap}h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800}h1{font-size:clamp(34px,6.2vw,66px)}h2{font-size:clamp(28px,4.4vw,46px)}h3{font-size:clamp(19px,2.2vw,23px);line-height:1.25}p{font-size:clamp(15px,1.6vw,17px)}.lime{color:var(--lime)}.sec{padding:clamp(56px,8vw,110px) 0}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}.eyebrow::before{content:"";width:22px;height:1.5px;background:var(--coral);display:block}header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;height:66px}.brand{display:flex;align-items:center;gap:11px;color:var(--olive);text-decoration:none}.brand svg{height:19px;width:auto;display:block}.brand span{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-left:11px;border-left:1px solid var(--line)}.nav-links{display:none;gap:26px}.nav-links a{color:var(--ink);text-decoration:none;font-size:14.5px;font-weight:600;opacity:.72}.nav-links a:hover{opacity:1;color:var(--olive)}@media(min-width:940px){.nav-links{display:flex}}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;border-radius:100px;font-weight:700;font-size:15.5px;text-decoration:none;border:none;cursor:pointer;transition:.18s ease;white-space:nowrap}.btn-lime{background:var(--lime);color:var(--olive)}.btn-lime:hover{background:var(--lime-2);transform:translateY(-2px)}.btn-olive{background:var(--olive);color:#fff}.btn-olive:hover{background:var(--olive-2);transform:translateY(-2px)}.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.32)}.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}.btn-sm{padding:11px 20px;font-size:14px}.btn svg{width:18px;height:18px;flex:none}.hero{background:var(--olive);color:#fff;position:relative;overflow:hidden}.hero::after{content:"";position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(196,241,57,.16),transparent 68%);top:-260px;right:-200px;pointer-events:none}.hero-in{padding-top:clamp(52px,7vw,92px);position:relative;z-index:2}.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(196,241,57,.13);border:1px solid rgba(196,241,57,.34);color:var(--lime);padding:8px 16px;border-radius:100px;font-size:13px;font-weight:700;margin-bottom:26px}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}.hero h1{max-width:16ch}.hero h1 em{font-style:normal;color:var(--lime)}.hero-lead{font-size:clamp(16px,2.1vw,20px);color:rgba(255,255,255,.82);max-width:52ch;margin:24px 0 34px}.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}.hero-note{font-size:13.5px;color:rgba(255,255,255,.55)}.audience{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}.audience span{font-size:13px;font-weight:600;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:100px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);margin-top:clamp(44px,6vw,72px);border-top:1px solid rgba(255,255,255,.14)}@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}.stat{background:var(--olive);padding:26px 18px 30px}.stat b{display:block;font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.03em;color:var(--lime)}.stat small{display:block;font-size:13px;color:rgba(255,255,255,.62);margin-top:7px;line-height:1.4}.grid{display:grid;gap:16px}@media(min-width:700px){.grid-2{grid-template-columns:1fr 1fr}}@media(min-width:980px){.grid-4{grid-template-columns:repeat(2,1fr)}}@media(min-width:1100px){.grid-4{grid-template-columns:repeat(4,1fr)}}.card{background:var(--soft);border-radius:var(--radius);padding:30px 26px 32px;border:1px solid var(--line);transition:.2s ease}.card:hover{transform:translateY(-3px);border-color:rgba(25,69,54,.28)}.card .num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:var(--lime);color:var(--olive);font-weight:800;font-size:15px;margin-bottom:18px}.card h3{margin-bottom:10px}.card p{color:var(--muted);font-size:15.5px}.card p b{color:var(--olive)}a.inl,.about-card a,.brands p a{color:var(--olive);font-weight:700;text-decoration:none;border-bottom:1.5px solid rgba(25,69,54,.28);white-space:nowrap}a.inl:hover,.about-card a:hover,.brands p a:hover{border-color:var(--coral);color:var(--coral)}.dd{display:grid;gap:16px}@media(min-width:820px){.dd{grid-template-columns:1fr 1fr}}.dd-box{border-radius:var(--radius);padding:32px 28px 34px}.dd-yes{background:var(--olive);color:#fff}.dd-no{background:var(--beige)}.dd-box h3{margin-bottom:20px;font-size:22px}.dd-box ul{list-style:none;display:grid;gap:13px}.dd-box li{display:flex;gap:12px;font-size:15.5px;line-height:1.45}.ic{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;margin-top:1px;font-size:13px;font-weight:800}.dd-yes .ic{background:var(--lime);color:var(--olive)}.dd-no .ic{background:#fff;color:var(--coral);border:1px solid rgba(255,73,52,.3)}.dd-yes li{color:rgba(255,255,255,.9)}.dd-no li{color:#3B4038}.dd-tag{display:inline-block;margin-top:24px;font-size:13.5px;font-weight:700;padding:9px 16px;border-radius:100px}.dd-yes .dd-tag{background:rgba(255,255,255,.1);color:var(--lime)}.dd-no .dd-tag{background:#fff;color:var(--olive)}.calc{background:var(--beige)}.calc-box{background:#fff;border-radius:var(--radius);padding:clamp(26px,4vw,46px);display:grid;gap:34px;border:1px solid var(--line)}@media(min-width:900px){.calc-box{grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}}.field{margin-bottom:28px}.field-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;gap:12px}.field-top label{font-size:14.5px;font-weight:600;color:var(--muted)}.field-top output{font-size:21px;font-weight:800;color:var(--olive);letter-spacing:-.02em}input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:100px;background:linear-gradient(90deg,var(--olive) var(--p,30%),rgba(25,69,54,.14) var(--p,30%));outline:none;cursor:pointer}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--lime);border:3px solid var(--olive);cursor:grab}input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--lime);border:3px solid var(--olive);cursor:grab}.calc-hint{font-size:13px;color:var(--muted);margin-top:10px}.calc-out{background:var(--olive);border-radius:20px;padding:34px 28px;color:#fff;text-align:center}.calc-out small{display:block;font-size:13.5px;color:rgba(255,255,255,.62);letter-spacing:.04em}.calc-out .big{font-size:clamp(38px,6vw,56px);font-weight:800;color:var(--lime);letter-spacing:-.035em;line-height:1.05;margin:10px 0 4px}.calc-out .sub{font-size:14px;color:rgba(255,255,255,.7);padding-top:16px;margin-top:16px;border-top:1px solid rgba(255,255,255,.16)}.calc-out .sub b{color:#fff}.special{background:var(--olive);color:#fff;border-radius:var(--radius);padding:clamp(30px,4.4vw,52px);display:grid;gap:28px;position:relative;overflow:hidden}@media(min-width:860px){.special{grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}}.special::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(196,241,57,.15),transparent 70%);bottom:-220px;left:-120px}.special>*{position:relative;z-index:2}.special h2{margin-bottom:14px}.special p{color:rgba(255,255,255,.8);max-width:46ch}.price-card{background:var(--lime);color:var(--olive);border-radius:20px;padding:28px 26px;text-align:center}.price-card .old{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.62}.price-card .new{font-size:clamp(40px,6.4vw,54px);font-weight:800;letter-spacing:-.035em;line-height:1;margin:6px 0}.price-card .lbl{font-size:14.5px;font-weight:700}.price-card .kk{display:inline-block;margin-top:16px;background:var(--olive);color:var(--lime);font-size:13px;font-weight:700;padding:8px 16px;border-radius:100px}.about{display:grid;gap:16px}@media(min-width:860px){.about{grid-template-columns:repeat(3,1fr)}}.about-card{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:#fff}.about-card b{display:block;font-size:clamp(30px,4vw,40px);font-weight:800;color:var(--olive);letter-spacing:-.03em;line-height:1}.about-card h3{margin:14px 0 8px;font-size:19px}.about-card p{color:var(--muted);font-size:15px}.brands{margin-top:22px;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(26px,3.6vw,40px)}.brands h3{margin-bottom:6px}.brands>p{color:var(--muted);font-size:15px;margin-bottom:24px}.brand-list{display:flex;flex-wrap:wrap;gap:10px}.brand-list span{background:#fff;border:1px solid var(--line);border-radius:100px;padding:11px 20px;font-weight:700;font-size:15px;color:var(--olive)}.certs{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}.certs p{font-size:15px;color:var(--muted);max-width:56ch}.certs p b{color:var(--olive)}.terms{background:var(--beige)}.terms-in{display:grid;gap:16px}@media(min-width:820px){.terms-in{grid-template-columns:1fr 1fr}}.term{background:#fff;border-radius:var(--radius);padding:32px 28px;border:1px solid var(--line)}.term .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 13px;border-radius:100px;margin-bottom:16px}.tag-now{background:var(--lime);color:var(--olive)}.tag-next{background:var(--olive);color:var(--lime)}.term p{color:var(--muted);margin-top:10px}details{border-bottom:1px solid var(--line);padding:22px 0;cursor:pointer}details summary{list-style:none;font-weight:700;font-size:clamp(16px,2vw,18.5px);display:flex;justify-content:space-between;gap:20px;align-items:flex-start;color:var(--olive)}details summary::-webkit-details-marker{display:none}details summary::after{content:"+";flex:none;font-size:26px;font-weight:400;line-height:1;color:var(--coral);transition:.2s}details[open] summary::after{transform:rotate(45deg)}details p{margin-top:13px;color:var(--muted);max-width:74ch;font-size:15.5px}.final{background:var(--olive);color:#fff;text-align:center;position:relative;overflow:hidden}.final::after{content:"";position:absolute;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(196,241,57,.14),transparent 68%);bottom:-460px;left:50%;transform:translateX(-50%)}.final-in{position:relative;z-index:2}.final h2{max-width:18ch;margin:0 auto 18px}.final p{color:rgba(255,255,255,.78);max-width:50ch;margin:0 auto 32px}.final .btn{font-size:17px;padding:18px 34px}.phone{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:#fff;text-decoration:none;font-size:17px;font-weight:700}.phone:hover{color:var(--lime)}.phone svg{width:20px;height:20px;flex:none}.final small{display:block;margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.5)}footer{background:var(--olive-2);color:rgba(255,255,255,.5);padding:30px 0 100px;font-size:13.5px}@media(min-width:860px){footer{padding-bottom:30px}}.foot{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}.foot svg{height:17px;width:auto;color:rgba(255,255,255,.65)}.foot a{color:rgba(255,255,255,.72);text-decoration:none}.foot a:hover{color:var(--lime)}.sticky{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:12px 16px;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:block}.sticky .btn{width:100%}@media(min-width:860px){.sticky{display:none}}.reveal{opacity:0;transform:translateY(22px);transition:.6s cubic-bezier(.2,.7,.3,1)}.reveal.in{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}</style>
+</head>
+<body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 66 17"><path d="M18.2065 9.82393C17.972 9.80715 17.7828 9.69739 17.6366 9.49595C17.4903 9.29581 17.4247 9.05434 17.4399 8.77414C17.4689 8.47714 17.5634 8.24472 17.7248 8.07944C17.885 7.91286 18.0905 7.83022 18.3389 7.83022H18.4045C18.5356 7.83022 18.7474 7.82635 19.0399 7.81731C19.3325 7.80827 19.6464 7.80052 19.9818 7.79148C20.3172 7.78245 20.6614 7.7747 21.012 7.76566C21.3625 7.75662 21.6689 7.75275 21.9324 7.75275C22.5465 7.75275 22.9991 7.87542 23.2904 8.11947C23.5829 8.36481 23.7254 8.63597 23.7178 8.93296C23.7103 9.22995 23.5564 9.50112 23.2576 9.74646C22.9575 9.9918 22.5086 10.1132 21.9097 10.1132C21.6323 10.1132 21.3108 10.1003 20.9451 10.0731C20.5795 10.0473 20.2176 10.0215 19.8608 9.99438C19.5027 9.96855 19.1736 9.93756 18.8748 9.9027C18.5747 9.86784 18.3528 9.84201 18.2065 9.82393Z" fill="currentColor"/><path d="M34.7531 14.2943C32.4911 17.1402 27.7123 18.3476 25.9862 14.3446C25.1805 11.6834 26.2472 8.77284 27.0731 6.22906C27.6379 4.61239 28.3037 2.9415 29.1989 1.47979C29.5797 0.776052 30.1547 -0.138162 31.0638 0.0606923C31.843 0.20144 32.3259 1.0343 32.2238 1.81165C32.1002 2.60061 31.6854 3.37278 31.461 4.17207C30.717 6.38917 29.6352 8.4242 29.1939 10.7407C28.8232 12.4891 29.4044 13.8101 31.379 13.2509C32.597 12.9694 33.7167 12.1805 34.9284 12.0152C36.3393 12.0191 35.3848 13.5376 34.796 14.2439L34.7557 14.2943H34.7531Z" fill="currentColor"/><path d="M37.0403 14.169C37.1638 11.7996 37.9279 9.39395 38.8383 7.20655C39.2947 6.21615 39.8218 5.14957 40.8961 4.86807C42.2339 4.55042 43.0131 5.94757 42.7899 7.17814C42.4949 9.03369 41.8619 10.9344 41.5051 12.7732C41.263 13.854 41.0802 15.0226 40.4346 15.9381C38.8837 17.9821 36.9104 16.5075 37.0403 14.2323V14.169ZM41.4925 0.304748C43.8995 -1.00718 45.2991 2.68067 43.2653 3.98485C40.9755 5.218 38.9656 1.51079 41.442 0.330573L41.4925 0.304748Z" fill="currentColor"/><path d="M53.0789 7.27111C53.4307 6.69908 53.9325 6.32461 54.4722 5.95144C54.6626 5.82231 54.8669 5.76679 55.056 5.84684C55.6171 6.1051 55.3271 6.99607 55.3233 7.49062C54.9703 8.70183 54.2805 9.80069 53.8203 10.9499C52.9415 12.8597 51.9454 14.8418 50.2873 16.1201C48.8675 17.2978 46.5097 17.2022 45.4997 15.5274C44.6057 14.1755 44.4796 12.4387 44.4633 10.8298C44.4633 9.79294 44.5465 8.77285 44.6738 7.76308C44.781 7.07484 44.752 6.32978 45.2437 5.78486C46.0545 4.76864 47.7756 5.06305 48.2358 6.28716C48.6519 7.91674 48.4842 9.51403 48.6595 11.172C48.8411 13.353 49.9847 11.6356 50.576 10.7511C51.3565 9.55019 52.253 8.51072 53.0449 7.32405L53.0802 7.27369L53.0789 7.27111Z" fill="currentColor"/><path d="M60.8837 13.1619C61.3653 12.9824 61.8218 12.7732 62.253 12.533C62.6842 12.2941 62.9793 12.1366 63.1407 12.0617C63.2718 12.0023 63.4218 11.9313 63.5895 11.8487C63.7572 11.766 63.9325 11.6847 64.1153 11.602C64.2982 11.5194 64.481 11.4522 64.6638 11.4006C64.8467 11.3489 65.0181 11.3218 65.1783 11.3218C65.2955 11.3218 65.4115 11.3412 65.5288 11.3786C65.6461 11.4161 65.7406 11.4871 65.8138 11.5917C65.9449 11.7415 66.0067 11.9248 66.0004 12.1418C65.9928 12.3587 65.9461 12.5834 65.8579 12.8158C65.7709 13.0482 65.6637 13.2729 65.5401 13.4886C65.4166 13.7055 65.2955 13.8888 65.1783 14.0386C64.8719 14.4583 64.4873 14.847 64.0271 15.2059C63.5668 15.5649 63.0738 15.8684 62.548 16.115C62.0223 16.3616 61.4775 16.5566 60.9152 16.6986C60.3528 16.8407 59.8157 16.9117 59.305 16.9117C58.8234 16.9117 58.3594 16.8523 57.913 16.7322C57.4667 16.6121 57.0695 16.4184 56.719 16.1486C56.3684 15.88 56.0797 15.5352 55.8527 15.1168C55.6258 14.6985 55.4833 14.1897 55.4253 13.5906C55.3522 12.8132 55.4177 11.9597 55.622 11.0326C55.8262 10.1054 56.1364 9.20286 56.5538 8.32867C56.9699 7.45319 57.4704 6.65261 58.0555 5.92692C58.6393 5.20123 59.2748 4.65115 59.962 4.27798C60.2835 4.09849 60.6378 3.96033 61.0249 3.86219C61.412 3.76535 61.8029 3.71628 62.1975 3.71628C62.5922 3.71628 62.9969 3.76922 63.3701 3.87252C63.7434 3.97711 64.0599 4.14239 64.3234 4.36707C64.5869 4.59175 64.776 4.87971 64.8933 5.23093C65.0106 5.58344 65.0169 6.00569 64.9147 6.49895C64.7533 7.23239 64.5163 7.86769 64.2023 8.40615C63.8884 8.9446 63.5404 9.38621 63.1608 9.72969C62.7813 10.0745 62.3791 10.3288 61.9554 10.4928C61.5318 10.6581 61.1232 10.7395 60.7286 10.7395C60.2898 10.7395 59.9178 10.6504 59.6114 10.4696C59.392 10.8286 59.2206 11.1849 59.097 11.5362C58.9722 11.8874 58.9104 12.1986 58.9104 12.4672C58.9104 12.7358 58.9873 12.9578 59.1411 13.1296C59.295 13.3013 59.532 13.3878 59.8535 13.3878C60.1461 13.3878 60.489 13.3129 60.8837 13.1632V13.1619ZM60.7298 8.71734C60.9051 8.71734 61.0879 8.65019 61.2771 8.5159C61.4662 8.38161 61.6465 8.21246 61.8142 8.01102C61.9819 7.80958 62.1282 7.59911 62.253 7.38217C62.3766 7.16524 62.4686 6.96639 62.5266 6.7869C62.3223 6.7727 62.0878 6.83597 61.8256 6.97801C61.562 7.12005 61.3212 7.29179 61.1018 7.49451C60.8824 7.69595 60.7147 7.90643 60.5974 8.12336C60.4802 8.34029 60.4663 8.5159 60.5533 8.65019C60.5974 8.69539 60.6555 8.71734 60.7286 8.71734H60.7298Z" fill="currentColor"/><path d="M14.8855 4.22767C13.5061 -0.198779 8.19143 -1.2744 4.00653 1.59608L3.9851 1.61028C0.261693 4.14116 -0.673887 8.43073 0.443261 12.1095C1.26536 15.2628 3.28909 17.3469 6.83093 16.8162C8.82818 16.5347 10.9276 15.6773 12.4709 14.1252C15.0091 11.4807 15.8236 7.29958 14.8842 4.22638L14.8855 4.22767ZM12.5743 2.69881C12.1557 3.31216 11.3827 3.47099 11.273 4.28319C11.2314 4.59051 11.2819 4.89009 11.3247 5.1845C11.3487 5.35753 11.4912 6.18135 11.2163 6.2769C11.1709 6.2924 11.1293 6.27174 11.0927 6.24979C10.9856 6.17877 10.8998 6.08192 10.8179 5.98379C10.5152 5.62223 10.2845 5.20516 9.98189 4.84489C9.89363 4.7403 9.79276 4.64346 9.66163 4.59955C9.50023 4.54532 9.30858 4.57889 9.13079 4.64475C8.73865 4.78937 8.35534 5.07345 7.94555 5.11606C7.85855 5.1251 7.75516 5.11089 7.7312 5.02954C7.72112 4.99468 7.72742 4.95465 7.73877 4.91591C7.8346 4.57115 8.17251 4.32839 8.41208 4.0753C8.68696 3.78735 8.94544 3.48003 9.15979 3.14559C9.26066 2.99064 9.3111 2.85635 9.33127 2.72722C9.36279 2.54128 9.33127 2.36438 9.30479 2.1397C9.27705 1.92406 9.21905 1.53151 9.52041 1.42692C9.94911 1.27843 10.287 1.94472 10.5115 2.17714C10.7788 2.45347 11.1167 2.58647 11.5265 2.53612C11.8493 2.49609 12.2439 2.44056 12.5465 2.51933C12.5692 2.52449 12.5932 2.53353 12.6071 2.5529C12.6348 2.59293 12.6071 2.65491 12.5743 2.70011V2.69881Z" fill="currentColor"/></symbol><symbol id="wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.43.06-.65.31-.23.25-.86.84-.86 2.05s.88 2.38 1.01 2.54c.12.17 1.74 2.65 4.2 3.72.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29z"/></symbol></svg>
 <header>
 <div class="wrap nav">
