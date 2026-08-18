@@ -30,36 +30,36 @@ src="https://www.facebook.com/tr?id=1051546461103694&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel: событие Lead по клику на кнопку «Заполнить анкету» -->
+<!-- Meta Pixel: клик по кнопке «Заполнить анкету» = InitiateCheckout (микро-конверсия). Реальная отправка анкеты уходит как Lead через Conversions API из Google-формы -->
 <script>
 (function(){
 var FORM_SELECTOR = 'a[href*="docs.google.com/forms"]';
 var fired = false;
 function newEventId(){
-try { if (window.crypto && crypto.randomUUID) return "lead-" + crypto.randomUUID(); } catch (e) {}
-return "lead-" + Date.now() + "-" + Math.random().toString(36).slice(2, 10);
+try { if (window.crypto && crypto.randomUUID) return "ic-" + crypto.randomUUID(); } catch (e) {}
+return "ic-" + Date.now() + "-" + Math.random().toString(36).slice(2, 10);
 }
-function trackLead(el){
+function trackClick(el){
 if (fired) return;
 fired = true;
 var label = (el && el.textContent ? el.textContent : "").replace(/\s+/g, " ").trim() || "Заполнить анкету";
 if (typeof fbq === "function") {
-fbq("track", "Lead", {
+fbq("track", "InitiateCheckout", {
 content_name: "Анкета бренд-амбассадора O-Live",
 content_category: "partners",
 button_text: label
 }, { eventID: newEventId() });
 }
-window.__oliveLeadFired = true;
+window.__oliveIcFired = true;
 }
 document.addEventListener("click", function(e){
 var el = e.target && e.target.closest ? e.target.closest(FORM_SELECTOR) : null;
-if (el) trackLead(el);
+if (el) trackClick(el);
 }, true);
 document.addEventListener("keydown", function(e){
 if (e.key !== "Enter") return;
 var el = document.activeElement;
-if (el && el.closest && el.closest(FORM_SELECTOR)) trackLead(el);
+if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 }, true);
 })();
 </script>
