@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Партнёрская программа O-Live — 10% с каждой продажи, ссылка сразу</title>
-<meta name="description" content="Партнёрская программа O-Live: 10% с каждой продажи. Придумайте никнейм — личная ссылка и доступ к статистике выдаются сразу, без анкеты и ожидания. Алматы.">
+<title>Партнёрская программа O-Live — промокод сразу, 10% с каждой продажи</title>
+<meta name="description" content="Партнёрская программа O-Live: 10% с каждой продажи. Оставьте контакты — промокод и доступ к статистике выдаются сразу, без анкеты и ожидания. Алматы.">
 <meta property="og:title" content="Бренд-амбассадоры O-Live — 10% с каждой продажи">
-<meta property="og:description" content="Рассказывайте о питании O-Live и получайте 10% с каждого заказа по вашей ссылке. Ссылку и статистику получаете сразу на сайте.">
+<meta property="og:description" content="Рассказывайте о питании O-Live и получайте 10% с каждого заказа по вашему промокоду. Промокод и статистику получаете сразу на сайте.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 .backlink{display:flex;width:max-content;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;margin-bottom:22px}
 .backlink:hover{color:var(--olive)}
 
-/* форма получения ссылки */
+/* форма получения промокода */
 .joinwrap{max-width:640px;margin:0 auto;padding-bottom:clamp(50px,7vw,90px)}
 .jbox{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3.4vw,34px)}
 .jsteps{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
@@ -131,7 +131,7 @@ src="https://www.facebook.com/tr?id=1051546461103694&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel: клик по кнопке «Хочу работать» = InitiateCheckout. Событие Lead отправляется из app.js в момент, когда ссылка реально создана -->
+<!-- Meta Pixel: клик по кнопке «Хочу работать» = InitiateCheckout. Событие Lead отправляется из app.js в момент, когда промокод реально выдан -->
 <script>
 (function(){
 var FORM_SELECTOR = 'a[href="#/join"]';
@@ -146,7 +146,7 @@ fired = true;
 var label = (el && el.textContent ? el.textContent : "").replace(/\s+/g, " ").trim() || "Хочу работать";
 if (typeof fbq === "function") {
 fbq("track", "InitiateCheckout", {
-content_name: "Получение партнёрской ссылки O-Live",
+content_name: "Получение промокода партнёра O-Live",
 content_category: "partners",
 button_text: label
 }, { eventID: newEventId() });
@@ -187,18 +187,18 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div class="view on" data-view="info">
 <section class="hero" id="top">
 <div class="wrap hero-in">
-<div class="badge"><span class="dot"></span> Набор открыт · ссылку выдаём сразу на этой странице</div>
+<div class="badge"><span class="dot"></span> Набор открыт · промокод выдаём сразу на этой странице</div>
 <h1>Рассказывайте о <span class="nb">O-Live</span> и получайте <em>10%</em> с каждой продажи</h1>
 <p class="hero-lead">
-Вы рассказываете о <span class="nb">O-Live</span> своей аудитории — мы платим 10% со всех заказов, которые пришли по вашей ссылке.
-Анкет и ожидания больше нет: придумайте никнейм, и личная ссылка, ключ доступа и статистика будут у вас через минуту.
-Никакого плана продаж и согласований контента — вы сами решаете, что и как снимать.
+Вы рассказываете о <span class="nb">O-Live</span> своей аудитории и даёте свой промокод — мы платим 10% со всех заказов, оформленных с ним.
+Анкет и ожидания больше нет: оставьте имя и телефон, и промокод с доступом к статистике будут у вас через минуту.
+Ваши люди получают скидку 5%, а вы — 10% с каждой продажи.
 </p>
 <div class="hero-cta">
-<a class="btn btn-lime" href="#/join">Хочу работать — получить ссылку</a>
+<a class="btn btn-lime" href="#/join">Хочу работать — получить промокод</a>
 <a class="btn btn-ghost" href="#kalkulyator">Посчитать доход</a>
 </div>
-<p class="hero-note">Ссылка создаётся автоматически — согласований и ожидания ответа нет</p>
+<p class="hero-note">Промокод выдаётся автоматически — согласований и ожидания ответа нет</p>
 <div class="audience">
 <span>Блогеры</span>
 <span>Тренеры</span>
@@ -226,17 +226,17 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div class="card reveal">
 <div class="num">10%</div>
 <h3>Процент с каждой продажи</h3>
-<p>10% со всей суммы заказа, который пришёл по вашей ссылке. Средний заказ у нас — <b>79 000 ₸</b>, это около <b>7 900 ₸</b> вам за одного клиента.</p>
+<p>10% со всей суммы заказа, оформленного с вашим промокодом. Средний заказ у нас — <b>79 000 ₸</b>, это около <b>7 900 ₸</b> вам за одного клиента.</p>
 </div>
 <div class="card reveal">
 <div class="num">01</div>
-<h3>Своя ссылка за минуту</h3>
-<p>Вы сами выбираете никнейм, и <b>ссылка на сайт <span class="nb">O-Live</span> создаётся сразу</b>. Все заказы с неё автоматически закрепляются за вами.</p>
+<h3>Свой промокод за минуту</h3>
+<p>Оставляете имя и телефон — и <b>промокод выдаётся сразу</b>. Все заказы, оформленные с ним, автоматически закрепляются за вами.</p>
 </div>
 <div class="card reveal">
 <div class="num">02</div>
 <h3>Своя статистика по ключу</h3>
-<p>Вместе со ссылкой вы получаете ключ доступа к странице отслеживания. Видно переходы, заказы и заработок. <b>Никаких «мы посчитаем сами»</b> — цифры одинаковые у вас и у нас.</p>
+<p>Вместе с промокодом вы получаете ключ доступа к странице отслеживания. Видно каждый заказ и заработок. <b>Никаких «мы посчитаем сами»</b> — цифры одинаковые у вас и у нас.</p>
 </div>
 <div class="card reveal">
 <div class="num">03</div>
@@ -254,7 +254,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <ul>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Рассказать своей аудитории о <span class="nb">O-Live</span> — так, как вам самим нравится</span></li>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Сделать фото, сторис или короткое видео своими руками</span></li>
-<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Делиться своей ссылкой — в профиле, в сторис, в переписке, в рассылке</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Называть свой промокод — в профиле, в сторис, в переписке, в рассылке</span></li>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px"><path d="M3 8.4l3.2 3.2L13 4.6"/></svg></span><span>Говорить своими словами, без рекламных штампов</span></li>
 </ul>
 <span class="dd-tag">Всё остальное — на нашей стороне</span>
@@ -263,7 +263,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <h3>Чего делать НЕ нужно</h3>
 <ul>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Заказывать и пробовать наше питание — это не условие сотрудничества</span></li>
-<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Заполнять анкету и ждать, пока её рассмотрят — ссылка выдаётся сразу</span></li>
+<li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Заполнять анкету и ждать, пока её рассмотрят — промокод выдаётся сразу</span></li>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Согласовывать с нами каждый пост, текст и план продаж</span></li>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Ждать от нас макеты и брифы — снимайте своими руками</span></li>
 <li><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="width:9px;height:9px"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span>Считать заказы вручную — за вас это делает система</span></li>
@@ -284,7 +284,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div>
 <div class="field">
 <div class="field-top">
-<label for="ord">Заказов в месяц по вашей ссылке</label>
+<label for="ord">Заказов в месяц по вашему промокоду</label>
 <output id="ordOut">5</output>
 </div>
 <input type="range" id="ord" min="1" max="40" value="5" step="1">
@@ -316,22 +316,22 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div class="card reveal">
 <div class="num">1</div>
 <h3>Жмёте «Хочу работать»</h3>
-<p>Никаких анкет и файлов. Нужен только никнейм для ссылки и номер телефона, на который придёт вознаграждение.</p>
+<p>Никаких анкет и файлов. Нужны только имя, фамилия и номер телефона, на который придёт вознаграждение.</p>
 </div>
 <div class="card reveal">
 <div class="num">2</div>
-<h3>Выбираете никнейм</h3>
-<p>Никнейм становится концом вашей ссылки. Сайт сразу показывает, свободен он или занят — <b>вы решаете сами, без нас.</b></p>
+<h3>Получаете промокод</h3>
+<p>Промокод появляется на экране сразу — вместе с ключом доступа к статистике. <b>Ждать и созваниваться не нужно.</b></p>
 </div>
 <div class="card reveal">
 <div class="num">3</div>
-<h3>Получаете ссылку и ключ</h3>
-<p>Ссылка работает с этой секунды. Вместе с ней вы получаете <b>ключ доступа к странице отслеживания</b> и сразу видите себя в общем списке.</p>
+<h3>Даёте его аудитории</h3>
+<p>Люди заказывают на сайте <span class="nb">O-Live</span> и вводят ваш код при оформлении. <b>Им — скидка 5%, вам — 10% с заказа.</b></p>
 </div>
 <div class="card reveal">
 <div class="num">4</div>
-<h3>Рассказываете и получаете 10%</h3>
-<p>Сторис, рилс, пост или личная рекомендация — с каждого оплаченного заказа по вашей ссылке ваши 10%.</p>
+<h3>Смотрите статистику</h3>
+<p>Каждое применение кода видно в отслеживании: кто, когда и на какую сумму заказал. Считать вручную ничего не нужно.</p>
 </div>
 </div>
 <div style="margin-top:34px;display:flex;gap:12px;flex-wrap:wrap" class="reveal">
@@ -414,22 +414,22 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div class="card reveal">
 <div class="num">01</div>
 <h3>Ключ доступа</h3>
-<p>Выдаётся вместе со ссылкой — строка вида <b>OLV-XXXX-XXXX-XXXX</b>. Браузер запоминает её, поэтому со своего телефона вы заходите в одно касание.</p>
+<p>Выдаётся вместе с промокодом — строка вида <b>OLV-XXXX-XXXX-XXXX</b>. Браузер запоминает её, поэтому со своего телефона вы заходите в одно касание.</p>
 </div>
 <div class="card reveal">
 <div class="num">02</div>
-<h3>Переходы — сразу</h3>
-<p>Как только по вашей ссылке кто-то открыл сайт, переход появляется в статистике. Один человек за сутки считается один раз.</p>
+<h3>Заказ виден после оплаты</h3>
+<p>Как только заказ с вашим кодом оплачен, он появляется в статистике: дата, сумма и ваши 10%. Данные идут напрямую из <b>Bitrix24</b> — той же системы, по которой работает вся доставка.</p>
 </div>
 <div class="card reveal">
 <div class="num">03</div>
-<h3>Продажи — после оплаты</h3>
-<p>Заказ попадает в статистику, когда он оплачен. Сумма, дата и ваши 10% считаются автоматически из <b>Bitrix24</b> — той же системы, по которой работает вся доставка.</p>
+<h3>Клиент закреплён на 90 дней</h3>
+<p>Скидка по коду действует один раз на клиента, но <b>все его заказы в течение 90 дней всё равно засчитываются вам</b> — включая продления рациона.</p>
 </div>
 <div class="card reveal">
 <div class="num">04</div>
-<h3>Клиент закреплён на 90 дней</h3>
-<p>Если человек пришёл по вашей ссылке и заказал повторно в течение 90 дней, эти заказы тоже ваши. Продления в этот срок идут вам.</p>
+<h3>Выплаты прозрачны</h3>
+<p>В таблице три колонки: заработано, выплачено и остаток. Вы в любой момент видите, сколько вам должны.</p>
 </div>
 </div>
 <div style="margin-top:34px;display:flex;gap:12px;flex-wrap:wrap" class="reveal">
@@ -442,80 +442,74 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div class="wrap" style="max-width:900px">
 <div class="eyebrow reveal">Вопросы</div>
 <h2 class="reveal" style="margin-bottom:8px">Все вопросы — здесь</h2>
-<p class="reveal" style="color:var(--muted);margin-bottom:28px">Весь процесс целиком: от того, как получить ссылку, до того, как приходят деньги. Если чего-то не хватило — оператор на связи по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>.</p>
+<p class="reveal" style="color:var(--muted);margin-bottom:28px">Весь процесс целиком: от того, как получить промокод, до того, как приходят деньги. Если чего-то не хватило — оператор на связи по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>.</p>
 <h3 class="reveal" style="margin:30px 0 14px">Начало работы</h3>
 <details class="reveal"><summary>Что это за программа и сколько я получаю?</summary>
-<p>Вы рассказываете о <span class="nb">O-Live</span> своей аудитории и делитесь личной ссылкой. С каждого оплаченного заказа, который пришёл по этой ссылке, вы получаете <b>10% от полной суммы заказа</b>. Средний заказ на сервисе сейчас 79 000 ₸ — это около 7 900 ₸ вам за одного клиента.</p></details>
-<details class="reveal"><summary>Как получить ссылку?</summary>
-<p>Нажмите <a class="inl" href="#/join">«Хочу работать»</a>, придумайте никнейм и оставьте номер телефона. Ссылка, ключ доступа и адрес страницы отслеживания появятся на экране сразу. Анкет, ожидания и созвонов больше нет.</p></details>
+<p>Вы рассказываете о <span class="nb">O-Live</span> своей аудитории и даёте свой промокод. С каждого оплаченного заказа, оформленного с этим кодом, вы получаете <b>10% от полной суммы</b>. Средний заказ на сервисе сейчас 79 000 ₸ — это около 7 900 ₸ вам за одного клиента.</p></details>
+<details class="reveal"><summary>Как получить промокод?</summary>
+<p>Нажмите <a class="inl" href="#/join">«Хочу работать»</a>, оставьте имя, фамилию и номер телефона. Промокод и ключ доступа к статистике появятся на экране сразу. Анкет, ожидания и созвонов нет.</p></details>
 <details class="reveal"><summary>Есть ли отбор? Меня могут не взять?</summary>
-<p>Нет. Раньше мы читали анкеты и отвечали выборочно — сейчас ссылку получает каждый, кто её создал. Мы никого не проверяем на входе: будут продажи по ссылке — получите свои 10%, не будет — вы ничего не теряете.</p></details>
+<p>Нет. Промокод получает каждый, кто оставил контакты. Мы никого не проверяем на входе: будут продажи по коду — получите свои 10%, не будет — вы ничего не теряете.</p></details>
 <details class="reveal"><summary>А если у меня немного подписчиков?</summary>
 <p>Это не имеет значения. У аккаунта на 2 000 живых подписчиков продажи часто выше, чем у аккаунта на 50 000. Порога по подписчикам нет вообще.</p></details>
 <details class="reveal"><summary>Нужно ли самому пробовать ваше питание?</summary>
-<p>Нет. Вы ничего не обязаны заказывать и пробовать — сотрудничество никак не связано с покупкой. Захотите попробовать для себя — оформляете заказ как обычный клиент, отдельно.</p></details>
+<p>Нет. Вы ничего не обязаны заказывать — сотрудничество никак не связано с покупкой.</p></details>
 <details class="reveal"><summary>Сколько это стоит и есть ли обязательства?</summary>
-<p>Участие бесплатное. Вы ничего не вкладываете, не выкупаете и не подписываете. Нет плана продаж, нет отчётов по охватам, нет минимального срока.</p></details>
+<p>Участие бесплатное. Вы ничего не вкладываете и не подписываете. Нет плана продаж, нет отчётов по охватам, нет минимального срока.</p></details>
 <details class="reveal"><summary>Нужно ли ИП, договор или документы?</summary>
-<p>Для старта — нет, достаточно никнейма и номера телефона. Формат выплат и документы обсуждаем лично, когда по вашей ссылке появятся первые продажи. Хотите обсудить заранее — звоните оператору по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>.</p></details>
-<h3 class="reveal" style="margin:34px 0 14px">Никнейм и ссылка</h3>
-<details class="reveal"><summary>Что такое никнейм и зачем он нужен?</summary>
-<p>Никнейм — это конец вашей ссылки, по нему система понимает, кому засчитать заказ. Никнейм <b>alina24</b> даёт ссылку вида <b>olive.kz/l/…?ref=alina24</b>. Он же будет виден в общей статистике.</p></details>
-<details class="reveal"><summary>Какой никнейм можно выбрать?</summary>
-<p>Латинские буквы, цифры, дефис и подчёркивание — от 3 до 20 символов. Начинаться и заканчиваться должен буквой или цифрой. Кириллица не подходит: такие ссылки ломаются в мессенджерах. Служебные слова вроде <b>olive</b>, <b>admin</b>, <b>test</b> занять нельзя.</p></details>
-<details class="reveal"><summary>Что если никнейм уже занят?</summary>
-<p>Сайт проверяет это прямо во время набора и пишет, свободен никнейм или нет. Занятый никнейм просто не даст нажать кнопку — придумайте другой.</p></details>
-<details class="reveal"><summary>Можно поменять никнейм потом?</summary>
-<p>Сам никнейм не меняется: старая ссылка уже может быть у людей в переписках и сторис, и переезд обнулил бы вашу статистику. Если никнейм принципиально не устраивает, позвоните оператору по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> — заведём новый и объясним, что будет со старым.</p></details>
-<details class="reveal"><summary>Куда ведёт моя ссылка?</summary>
-<p>На сайт <span class="nb">O-Live</span>, где человек выбирает рацион и оформляет заказ как обычно. Никаких дополнительных шагов и никаких промокодов — метка с вашим никнеймом работает незаметно для клиента.</p></details>
-<details class="reveal"><summary>Можно ли иметь несколько ссылок?</summary>
-<p>Обычно одной достаточно, и она удобнее: вся статистика в одном месте. Если нужна отдельная ссылка под конкретную площадку, создайте вторую — в сутки с одного устройства можно создать до трёх — или позвоните оператору.</p></details>
-<details class="reveal"><summary>Где размещать ссылку?</summary>
-<p>Где вам удобно: шапка профиля, сторис, пост, рилс, Telegram-канал, рассылка, личная переписка. Способ выбираете вы, ссылка работает одинаково везде.</p></details>
+<p>Для старта — нет, достаточно имени и телефона. Формат выплат и документы обсуждаем лично, когда по вашему коду появятся первые продажи. Хотите обсудить заранее — звоните по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>.</p></details>
+<h3 class="reveal" style="margin:34px 0 14px">Промокод</h3>
+<details class="reveal"><summary>Как выглядит промокод и как им пользоваться?</summary>
+<p>Это короткое слово вида <b>live7</b>. Ваш человек заходит на <span class="nb">olive.kz</span>, набирает заказ, а на шаге оплаты в поле «Промокод» вводит ваш код и жмёт «Применить» — цена сразу падает на 5%.</p></details>
+<details class="reveal"><summary>Какую скидку получает мой подписчик?</summary>
+<p><b>5% от суммы заказа.</b> Это ваш аргумент: человеку выгоднее заказать с вашим кодом, чем без него.</p></details>
+<details class="reveal"><summary>Сколько раз можно применить код?</summary>
+<p>Скидка действует <b>один раз на клиента</b> — на его первый заказ. Но все последующие заказы этого же человека в течение 90 дней всё равно засчитываются вам и оплачиваются, даже без кода.</p></details>
+<details class="reveal"><summary>Можно ли поменять промокод на красивый, со своим именем?</summary>
+<p>Пока коды выдаются из общего пула — <b>live1</b>, <b>live2</b> и так далее. Если вам принципиально нужен именной код, позвоните оператору по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> — обсудим.</p></details>
+<details class="reveal"><summary>Могу ли я получить второй промокод?</summary>
+<p>На один номер телефона выдаётся один код — так статистика остаётся честной. Если нужен отдельный код под конкретную площадку, позвоните оператору.</p></details>
+<details class="reveal"><summary>Где называть промокод?</summary>
+<p>Где вам удобно: шапка профиля, сторис, пост, рилс, Telegram-канал, рассылка, личная переписка. Код работает одинаково везде.</p></details>
 <details class="reveal"><summary>Можно рекомендовать не публично, а друзьям и знакомым?</summary>
 <p>Да. Публичный контент, чат или разговор один на один — всё считается одинаково.</p></details>
+<details class="reveal"><summary>Что если человек забудет ввести код?</summary>
+<p>Тогда заказ, к сожалению, не засчитается — система видит только то, что реально применено при оформлении. Поэтому код стоит называть прямо и повторять: «скидка 5% по коду live7».</p></details>
 <h3 class="reveal" style="margin:34px 0 14px">Статистика и ключ доступа</h3>
 <details class="reveal"><summary>Как я пойму, что заказ засчитан именно мне?</summary>
-<p>На <a class="inl" href="#/board">странице отслеживания</a> видна ваша ссылка и всё, что по ней происходит: переходы, привлечённые клиенты, оплаченные заказы, сумма и ваши 10%. Ваша строка отмечена и стоит первой. Считать вручную ничего не нужно.</p></details>
+<p>На <a class="inl" href="#/board">странице отслеживания</a> видно ваш код и всё, что по нему происходит: клиенты, оплаченные заказы, сумма и ваши 10%. Ваша строка отмечена и стоит первой.</p></details>
 <details class="reveal"><summary>Что за ключ доступа и зачем он?</summary>
-<p>Ключ — это строка вида <b>OLV-XXXX-XXXX-XXXX</b>, которую вы получаете вместе со ссылкой. Он открывает страницу отслеживания. Мы намеренно не прячем статистику за паролем и почтой: ключ проще — вставили один раз, браузер запомнил.</p></details>
+<p>Ключ — строка вида <b>OLV-XXXX-XXXX-XXXX</b>, которую вы получаете вместе с промокодом. Он открывает вашу статистику. Мы намеренно не прячем её за паролем и почтой: ключ проще — вставили один раз, браузер запомнил.</p></details>
 <details class="reveal"><summary>Я потерял ключ. Что делать?</summary>
-<p>Позвоните оператору по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> — мы найдём вас по никнейму и телефону и выдадим ключ заново.</p></details>
+<p>Позвоните оператору по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> — найдём вас по промокоду и телефону и выдадим ключ заново.</p></details>
 <details class="reveal"><summary>Могу смотреть статистику с другого телефона или компьютера?</summary>
 <p>Да. Откройте <a class="inl" href="#/board">страницу отслеживания</a> и вставьте ключ — устройств может быть сколько угодно. Именно поэтому ключ стоит сохранить в заметки.</p></details>
 <details class="reveal"><summary>Кто ещё видит мою статистику?</summary>
-<p>Страница отслеживания общая для всех участников: вы видите список всех живых ссылок и результаты по ним, и другие участники так же видят вашу строку. Ключ при этом ваш личный — по нему видно, что это именно вы. Данные клиентов — имена, телефоны, адреса — не показываются никому: только количество заказов и суммы.</p></details>
+<p>Страница общая для всех участников: вы видите список кодов и результаты по ним, и другие участники так же видят вашу строку. Ключ при этом ваш личный. Данные клиентов — имена, адреса, полные телефоны — не показываются никому.</p></details>
 <details class="reveal"><summary>Как быстро появляются данные?</summary>
-<p>Переход по ссылке виден почти сразу. Оплаченный заказ появляется после того, как оплата прошла и попала в Bitrix24 — обычно в тот же день. Страница обновляется сама каждые 5 минут, можно нажать «обновить».</p></details>
-<details class="reveal"><summary>Переходы есть, а заказов нет — почему?</summary>
-<p>Так бывает: человек посмотрел рацион и вернулся позже. Клиент закреплён за вами на 90 дней, поэтому заказ, сделанный не в первый визит, всё равно ваш. Если переходов много, а заказов нет совсем — позвоните оператору, посмотрим вместе.</p></details>
-<details class="reveal"><summary>Что значит «клиент закреплён на 90 дней»?</summary>
-<p>Если человек пришёл по вашей ссылке, все его оплаченные заказы в течение следующих 90 дней засчитываются вам — в том числе продления рациона. Отсчёт идёт с первого перехода.</p></details>
-<details class="reveal"><summary>Заказ засчитается, если клиент позвонит вместо оформления на сайте?</summary>
-<p>Заказ связывается с вашей ссылкой по номеру телефона клиента. Если человек начал оформление на вашей странице, а закончил через оператора, заказ обычно всё равно закрепляется за вами. Видите, что заказ не отобразился — сообщите оператору, разберём вручную.</p></details>
+<p>Заказ появляется после того, как оплата прошла и попала в Bitrix24 — обычно в тот же день. Страница обновляется сама каждые 5 минут, можно нажать «обновить».</p></details>
 <h3 class="reveal" style="margin:34px 0 14px">Деньги и выплаты</h3>
 <details class="reveal"><summary>10% — это с чего именно?</summary>
-<p>С полной суммы оплаченного заказа, который пришёл по вашей ссылке. Не с первого дня, не с наценки, не с прибыли — со всей суммы.</p></details>
+<p>С полной суммы оплаченного заказа, оформленного с вашим кодом. Не с первого дня, не с наценки, не с прибыли — со всей суммы.</p></details>
 <details class="reveal"><summary>Когда заказ считается оплаченным?</summary>
 <p>Когда в системе стоит дата оплаты и сумма больше нуля. Отменённые сделки в статистику не попадают, поэтому цифра «заработал» — это то, что реально ваше.</p></details>
 <details class="reveal"><summary>Как и когда происходят выплаты?</summary>
-<p>График и способ выплат обсуждаем лично — подстраиваемся под удобный вам формат. Все начисления видны в статистике: колонки «Заработал 10%», «Выплачено» и «Остаток». Чтобы договориться о выплате, позвоните по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>.</p></details>
+<p>График и способ обсуждаем лично — подстраиваемся под удобный вам формат. Все начисления видны в статистике: «Заработал 10%», «Выплачено» и «Остаток». Чтобы договориться о выплате, позвоните по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>.</p></details>
 <details class="reveal"><summary>Что такое тест-месяц и что дальше?</summary>
-<p>Первый месяц работаем на условиях 10% с продаж — вы ничем не рискуете и просто смотрите на реальные цифры. Если всё идёт хорошо, продлеваем на 3 месяца и обсуждаем условия лучше. Долгосрочные амбассадоры для нас приоритетны.</p></details>
+<p>Первый месяц работаем на условиях 10% с продаж — вы ничем не рискуете и просто смотрите на реальные цифры. Если всё идёт хорошо, продлеваем на 3 месяца и обсуждаем условия лучше.</p></details>
 <h3 class="reveal" style="margin:34px 0 14px">Контент и доверие</h3>
 <details class="reveal"><summary>Вы даёте готовые макеты и тексты?</summary>
 <p>Нет — и это осознанно. Ваш контент, снятый вашими руками, работает лучше брендовых баннеров. Если нужно, поделимся фактами о продукте и составом рационов.</p></details>
 <details class="reveal"><summary>Что можно и чего нельзя говорить о продукте?</summary>
-<p>Говорите своими словами и честно. Не нужно обещать лечение болезней, гарантированное похудение на конкретное число килограммов и медицинский эффект — за такое площадки блокируют, и нам это тоже не нужно. Всё остальное на ваше усмотрение.</p></details>
+<p>Говорите своими словами и честно. Не нужно обещать лечение болезней и гарантированное похудение на конкретное число килограммов — за такое площадки блокируют. Всё остальное на ваше усмотрение.</p></details>
 <details class="reveal"><summary>Есть ли сертификаты на продукцию?</summary>
-<p>Да. Попросите их у оператора по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> — пришлём документы, чтобы вы были уверены в том, что рекомендуете.</p></details>
+<p>Да. Попросите их у оператора по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> — пришлём документы.</p></details>
 <details class="reveal"><summary>Как убедиться, что вам можно доверять?</summary>
 <p>Посмотрите наш основной сайт <a class="inl" href="https://olive.kz/l/new" target="_blank" rel="noopener">olive.kz</a> и Instagram <a class="inl" href="https://instagram.com/o_live.kz" target="_blank" rel="noopener">@o_live.kz</a>. Информация о том, что мы производим продукцию для Magnum, Magnum Chef, ВкусВилл, Continent, Picasso, Lukoil и Яндекс Лавки, есть <a class="inl" href="https://halaldamu.kz/company/segodnya-magnum-chef-vkusvill-continent-picasso-lukoil-yandeks-lavka/" target="_blank" rel="noopener">на halaldamu.kz</a>. У нас своё производство мощностью до 15 000 заказов в сутки.</p></details>
 <details class="reveal"><summary>Я хочу задать вопрос живому человеку.</summary>
-<p>Позвоните по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> или напишите в <a class="inl" href="https://wa.me/77008702626" target="_blank" rel="noopener">WhatsApp</a> — это операторы <span class="nb">O-Live</span>, они отвечают по ссылкам, статистике и выплатам.</p></details>
+<p>Позвоните по номеру <a class="inl" href="tel:+77008702626">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a> или напишите в <a class="inl" href="https://wa.me/77008702626" target="_blank" rel="noopener">WhatsApp</a> — это операторы <span class="nb">O-Live</span>.</p></details>
 <div class="opbox reveal" style="margin-top:34px">
-<p><b>Не нашли свой вопрос?</b> Операторы <span class="nb">O-Live</span> отвечают по ссылкам, статистике и выплатам — звоните или пишите, это быстрее переписки.</p>
+<p><b>Не нашли свой вопрос?</b> Операторы <span class="nb">O-Live</span> отвечают по промокодам, статистике и выплатам — звоните или пишите, это быстрее переписки.</p>
 <div class="opact">
 <a class="btn btn-olive btn-sm" href="tel:+77008702626">Позвонить 8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a>
 <a class="btn btn-ghost btn-sm" href="https://wa.me/77008702626" target="_blank" rel="noopener">Написать в WhatsApp</a>
@@ -525,14 +519,14 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 </section>
 <section class="sec final">
 <div class="wrap final-in">
-<h2>Набор открыт. Ссылка — прямо сейчас</h2>
-<p>Придумайте никнейм и заберите свою ссылку, ключ доступа и статистику. Занимает минуту, ждать ответа не нужно.</p>
+<h2>Набор открыт. Промокод — прямо сейчас</h2>
+<p>Оставьте имя и телефон и заберите свой промокод, ключ доступа и статистику. Занимает минуту, ждать ответа не нужно.</p>
 <a class="btn btn-lime" href="#/join">Хочу работать</a>
 <small>Есть вопросы — оператор <span class="nb">O-Live</span> на связи: <a class="inl" href="tel:+77008702626" style="color:inherit">8&nbsp;700&nbsp;870&nbsp;26&nbsp;26</a></small>
 </div>
 </section>
 </div>
-<!-- ══ ЭКРАН 2: получение личной ссылки ══════════════════════════════════ -->
+<!-- ══ ЭКРАН 2: получение промокода ══════════════════════════════════════ -->
 <div class="view" data-view="join">
 <section class="sec pagehead">
 <div class="wrap joinwrap">
@@ -540,41 +534,36 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 
   <div id="joinForm">
     <div class="eyebrow">Хочу работать</div>
-    <h2 style="margin-bottom:12px">Придумайте никнейм — и ссылка ваша</h2>
+    <h2 style="margin-bottom:12px">Оставьте контакты — и промокод ваш</h2>
     <p style="color:var(--muted);margin-bottom:26px">
-      Никнейм станет концом вашей ссылки. Ссылка, ключ и доступ к статистике появятся здесь же,
-      через несколько секунд. Ждать ответа и созваниваться не нужно.
+      Промокод выдаётся сразу, здесь же на странице. Ждать ответа, созваниваться и заполнять анкету не нужно.
+      Ваши люди вводят его при оформлении заказа на <span class="nb">olive.kz</span> — и получают скидку 5%,
+      а заказ автоматически засчитывается вам.
     </p>
 
     <div class="jbox">
       <div class="jsteps">
-        <div class="jstep on">1 · Никнейм</div>
-        <div class="jstep on">2 · Куда платить</div>
-        <div class="jstep">3 · Ссылка и ключ</div>
+        <div class="jstep on">1 · Контакты</div>
+        <div class="jstep">2 · Промокод</div>
+        <div class="jstep">3 · Статистика</div>
       </div>
 
       <div id="jError" class="jerr" hidden></div>
 
       <div class="jfield">
-        <label for="nick">Никнейм вашей ссылки</label>
-        <div class="nickrow" id="nickRow">
-          <span class="nickpre">olive.kz/…?ref=</span>
-          <input id="nick" type="text" placeholder="alina24" autocomplete="off" autocapitalize="off"
-                 spellcheck="false" maxlength="20" inputmode="latin">
-        </div>
-        <div class="jstatus wait" id="nickStatus">Латинские буквы и цифры, от 3 до 20 символов</div>
+        <label for="jname">Имя</label>
+        <input id="jname" class="jinput" type="text" placeholder="Алина" maxlength="40" autocomplete="given-name">
+      </div>
+
+      <div class="jfield">
+        <label for="jsurname">Фамилия</label>
+        <input id="jsurname" class="jinput" type="text" placeholder="Калинич" maxlength="40" autocomplete="family-name">
       </div>
 
       <div class="jfield">
         <label for="jphone">Номер телефона</label>
         <input id="jphone" class="jinput" type="tel" placeholder="+7 700 000 00 00" autocomplete="tel">
-        <div class="hint">На этот номер мы отправляем вознаграждение и пишем, если что-то нужно уточнить.</div>
-      </div>
-
-      <div class="jfield">
-        <label for="jname">Как вас зовут</label>
-        <input id="jname" class="jinput" type="text" placeholder="Алина" maxlength="80" autocomplete="name">
-        <div class="hint">Необязательно. Это имя будет видно в общей статистике вместо никнейма.</div>
+        <div class="hint">На этот номер мы отправляем вознаграждение и пишем, если нужно что-то уточнить.</div>
       </div>
 
       <div class="jfield">
@@ -583,12 +572,12 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
         <div class="hint">Необязательно. Помогает нам понять, кто вы, если понадобится связаться.</div>
       </div>
 
-      <button class="jbtn" id="jGo" disabled>Создать мою ссылку</button>
+      <button class="jbtn" id="jGo">Получить промокод</button>
       <p class="jnote">
         Нажимая кнопку, вы соглашаетесь с
         <a class="inl" href="https://olive.kz/docs/oferta" target="_blank" rel="noopener">офертой</a> и
         <a class="inl" href="https://olive.kz/docs/politika" target="_blank" rel="noopener">политикой обработки персональных данных</a>.
-        Никаких вложений и обязательств — участие бесплатное.
+        Участие бесплатное, никаких вложений и обязательств.
       </p>
     </div>
   </div>
@@ -596,15 +585,23 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
   <div id="joinDone" hidden>
     <div class="done">
       <div class="eyebrow">Готово</div>
-      <h2 id="doneTitle">Ваша ссылка работает прямо сейчас</h2>
+      <h2 id="doneTitle">Ваш промокод готов</h2>
       <p>Скопируйте всё, что ниже. Ключ доступа мы показываем один раз — сохраните его.</p>
 
       <div class="dblock">
-        <div class="lbl">Ваша личная ссылка</div>
-        <div class="dval" id="outLink">—</div>
+        <div class="lbl">Ваш промокод</div>
+        <div class="dval key" id="outCode">—</div>
         <div class="dcopy">
-          <button class="cbtn solid" data-copy="#outLink">Скопировать ссылку</button>
-          <a class="cbtn" id="outLinkOpen" href="#" target="_blank" rel="noopener">Открыть</a>
+          <button class="cbtn solid" data-copy="#outCode">Скопировать промокод</button>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <div class="lbl">Куда отправлять людей</div>
+        <div class="dval" id="outShop">—</div>
+        <div class="dcopy">
+          <button class="cbtn solid" data-copy="#outShop">Скопировать адрес</button>
+          <a class="cbtn" id="outShopOpen" href="#" target="_blank" rel="noopener">Открыть</a>
         </div>
       </div>
 
@@ -613,15 +610,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
         <div class="dval key" id="outKey">—</div>
         <div class="dcopy">
           <button class="cbtn solid" data-copy="#outKey">Скопировать ключ</button>
-        </div>
-      </div>
-
-      <div class="dblock">
-        <div class="lbl">Страница отслеживания</div>
-        <div class="dval" id="outBoard">—</div>
-        <div class="dcopy">
-          <button class="cbtn" data-copy="#outBoard">Скопировать адрес</button>
-          <a class="cbtn solid" id="outBoardOpen" href="#/board">Открыть статистику</a>
+          <a class="cbtn" id="outBoardOpen" href="#/board">Открыть статистику</a>
         </div>
       </div>
     </div>
@@ -629,15 +618,18 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
     <div class="warnbox">
       <b>Сохраните ключ прямо сейчас.</b> Он открывает вашу статистику. Мы храним его в этом браузере,
       но если вы очистите данные сайта или откроете статистику с другого телефона — ключ понадобится снова.
-      Потеряли — напишите оператору, восстановим.
+      Потеряли — позвоните оператору, восстановим по промокоду и номеру телефона.
     </div>
 
     <div class="jbox">
-      <h3 style="margin-bottom:10px">Что дальше</h3>
+      <h3 style="margin-bottom:10px">Что говорить своей аудитории</h3>
+      <p style="color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:14px">
+        «Заказывайте на olive.kz и вводите промокод <b id="outCodeInline">—</b> при оформлении — будет скидка 5%.»
+      </p>
       <ol style="padding-left:20px;color:var(--muted);font-size:15px;line-height:1.75">
-        <li>Поставьте ссылку в шапку профиля, в сторис или отправьте в личные сообщения.</li>
-        <li>Каждый переход и каждый заказ по ней сразу попадают в вашу статистику.</li>
-        <li>С каждого оплаченного заказа ваши 10%. Клиент закреплён за вами на 90 дней.</li>
+        <li>Человек заходит на <span class="nb">olive.kz</span>, выбирает рацион и доходит до оплаты.</li>
+        <li>В поле «Промокод» вводит ваш код и жмёт «Применить» — цена сразу падает на 5%.</li>
+        <li>Заказ закрепляется за вами. С каждой оплаты ваши 10%, и всё видно в статистике.</li>
       </ol>
       <div class="dcopy" style="margin-top:18px">
         <a class="btn btn-olive btn-sm" href="#/board">Перейти к статистике</a>
@@ -655,18 +647,17 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 <div class="wrap">
   <a class="backlink" href="#top">← Вернуться к описанию программы</a>
   <div class="eyebrow">Отслеживание</div>
-  <h2 style="margin-bottom:10px">Реферальная программа в реальном времени</h2>
-  <p style="color:var(--muted);max-width:60ch;margin-bottom:26px">
-    Здесь видно все живые ссылки участников: переходы, заказы, сумму продаж и заработок.
-    Новая ссылка появляется в списке сразу после создания. Данные берутся из
-    <span class="nb">O-Live</span> и Bitrix24 напрямую.
+  <h2 style="margin-bottom:10px">Промокоды и заработок в реальном времени</h2>
+  <p style="color:var(--muted);max-width:62ch;margin-bottom:26px">
+    Здесь видно все выданные промокоды: сколько раз применили, на какую сумму и сколько заработал участник.
+    Данные берутся из <span class="nb">O-Live</span> и Bitrix24 напрямую и обновляются сами.
   </p>
 
   <div class="gate jbox" id="bGate" hidden>
     <div class="eyebrow">Ключ доступа</div>
     <h3 style="margin-bottom:8px">Введите ключ</h3>
     <p style="color:var(--muted);font-size:14.5px;margin-bottom:18px">
-      Ключ мы выдали вместе со ссылкой. Ключ не хранится в коде страницы — браузер запомнит его на этом устройстве.
+      Ключ мы выдали вместе с промокодом. Ключ не хранится в коде страницы — браузер запомнит его на этом устройстве.
     </p>
     <div id="bGateErr" class="jerr" hidden></div>
     <div class="jfield">
@@ -674,7 +665,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
              autocomplete="off" spellcheck="false" autocapitalize="characters">
     </div>
     <button class="jbtn" id="bKeyGo">Открыть статистику</button>
-    <p class="jnote">Ещё нет ключа? <a class="inl" href="#/join">Создайте свою ссылку</a> — ключ выдаётся сразу.</p>
+    <p class="jnote">Ещё нет промокода? <a class="inl" href="#/join">Получите его здесь</a> — выдаём сразу.</p>
   </div>
 
   <div id="bBody" hidden>
@@ -685,16 +676,16 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
     </div>
     <div class="tiles" id="bTiles"></div>
 
-    <h3 style="margin:26px 0 4px">Ссылки участников</h3>
-    <p style="color:var(--muted);font-size:14px;margin-bottom:16px">Возле каждой ссылки — сколько по ней продано и сколько заработал участник</p>
+    <h3 style="margin:26px 0 4px">Промокоды участников</h3>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:16px">Возле каждого кода — сколько по нему заказали и сколько заработал участник</p>
     <div id="bCards"></div>
 
     <h3 style="margin:30px 0 4px">Детализация</h3>
-    <p style="color:var(--muted);font-size:14px;margin-bottom:16px">Переходы → привлечённые клиенты → продажи → заработок</p>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:16px">Промокод → клиенты → оплаченные заказы → заработок</p>
     <div class="bscroll">
       <table class="btable">
         <thead><tr>
-          <th>Участник</th><th>Переходы</th><th>Клиентов</th><th>Продаж</th>
+          <th>Участник</th><th>Промокод</th><th>Клиентов</th><th>Оплачено</th>
           <th>Продано на, ₸</th><th>Ср. чек, ₸</th><th>Заработал 10%, ₸</th><th>Выплачено, ₸</th><th>Остаток, ₸</th>
         </tr></thead>
         <tbody id="bTbody"></tbody>
@@ -704,6 +695,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
 
     <p style="color:var(--muted);font-size:13px;margin-top:18px;line-height:1.7">
       Продажей считается оплаченный заказ: заполнена дата оплаты и сумма больше нуля, отменённые сделки исключены.
+      Повторные заказы того же клиента в течение 90 дней тоже засчитываются участнику, даже если код применяется один раз.
       Страница сама обновляется каждые 5 минут.
     </p>
   </div>
@@ -711,7 +703,7 @@ if (el && el.closest && el.closest(FORM_SELECTOR)) trackClick(el);
   <div class="opbox">
     <p>
       <b>Остались вопросы по статистике или выплатам?</b>
-      Операторы <span class="nb">O-Live</span> на связи — позвоните или напишите в WhatsApp, ответим по вашей ссылке и цифрам.
+      Операторы <span class="nb">O-Live</span> на связи — позвоните или напишите в WhatsApp.
     </p>
     <div class="opact">
       <a class="btn btn-olive btn-sm" href="tel:+77008702626">Позвонить 8 700 870 26 26</a>
@@ -765,9 +757,9 @@ io.observe(el);
 })();
 </script>
 <script>
-/* ── O-Live · партнёрская программа: один сайт, три экрана ───────────────
+/* ── O-Live · партнёрская программа на промокодах ────────────────────────
    info  — описание программы
-   join  — выбор никнейма, выдача ссылки и ключа
+   join  — контакты → промокод + ключ доступа
    board — отслеживание по ключу
    Бэкенд: Supabase Edge Functions (join / refboard).                     */
 (function () {
@@ -814,46 +806,6 @@ io.observe(el);
   window.addEventListener('hashchange', route);
 
   /* ── экран «Хочу работать» ───────────────────────────────────────────── */
-  var nick = $('#nick'), nickRow = $('#nickRow'), nickStatus = $('#nickStatus'), jGo = $('#jGo');
-  var nickOk = false, checkTimer = null, lastChecked = '';
-
-  function setNick(state, text) {
-    nickRow.classList.remove('good', 'bad');
-    nickStatus.className = 'jstatus ' + (state === 'good' ? 'good' : state === 'bad' ? 'bad' : 'wait');
-    if (state === 'good') nickRow.classList.add('good');
-    if (state === 'bad') nickRow.classList.add('bad');
-    nickStatus.textContent = text;
-    nickOk = state === 'good';
-    jGo.disabled = !nickOk;
-  }
-
-  function checkNick() {
-    var v = (nick.value || '').trim().toLowerCase().replace(/^@+/, '');
-    if (v !== nick.value) nick.value = v;
-    if (!v) { setNick('wait', 'Латинские буквы и цифры, от 3 до 20 символов'); return; }
-    if (v === lastChecked) return;
-    setNick('wait', 'Проверяем…');
-    clearTimeout(checkTimer);
-    checkTimer = setTimeout(function () {
-      var asked = v;
-      fetch(API_JOIN + '?nick=' + encodeURIComponent(v))
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          if ((nick.value || '').trim().toLowerCase() !== asked) return;
-          lastChecked = asked;
-          if (d.available) setNick('good', '✓ Никнейм свободен — ссылка будет olive.kz/…?ref=' + asked);
-          else setNick('bad', d.reason || 'Никнейм не подходит');
-        })
-        .catch(function () { setNick('wait', 'Не удалось проверить — попробуйте ещё раз'); });
-    }, 350);
-  }
-
-  if (nick) {
-    nick.addEventListener('input', checkNick);
-    nick.addEventListener('focus', function () { nickRow.classList.add('focus'); });
-    nick.addEventListener('blur', function () { nickRow.classList.remove('focus'); });
-  }
-
   function jError(msg) {
     var box = $('#jError');
     if (!box) return;
@@ -863,62 +815,62 @@ io.observe(el);
     box.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  var jGo = $('#jGo');
   if (jGo) jGo.addEventListener('click', function () {
-    if (!nickOk) return;
-    var phone = ($('#jphone').value || '').trim();
+    var name    = ($('#jname').value || '').trim();
+    var surname = ($('#jsurname').value || '').trim();
+    var phone   = ($('#jphone').value || '').trim();
+
+    if (name.length < 2)    { jError('Впишите имя.'); $('#jname').focus(); return; }
+    if (surname.length < 2) { jError('Впишите фамилию.'); $('#jsurname').focus(); return; }
     if (phone.replace(/\D/g, '').length < 10) {
       jError('Впишите номер телефона — на него мы отправляем вознаграждение.');
       $('#jphone').focus();
       return;
     }
+
     jError('');
     jGo.disabled = true;
-    jGo.textContent = 'Создаём ссылку…';
+    jGo.textContent = 'Выдаём промокод…';
 
     fetch(API_JOIN, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        nick: nick.value.trim().toLowerCase(),
-        phone: phone,
-        name: ($('#jname').value || '').trim(),
-        instagram: ($('#jinsta').value || '').trim()
-      })
+      body: JSON.stringify({ name: name, surname: surname, phone: phone, instagram: ($('#jinsta').value || '').trim() })
     })
       .then(function (r) { return r.json(); })
       .then(function (d) {
         jGo.disabled = false;
-        jGo.textContent = 'Создать мою ссылку';
-        if (!d.ok) {
-          jError(d.error || 'Не получилось создать ссылку. Попробуйте ещё раз.');
-          if (d.field === 'nick') { lastChecked = ''; checkNick(); }
-          return;
-        }
+        jGo.textContent = 'Получить промокод';
+        if (!d.ok) { jError(d.error || 'Не получилось выдать промокод. Попробуйте ещё раз.'); return; }
         store(KEY_STORE, d.key);
         showDone(d);
         try {
-          if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'Партнёрская ссылка O-Live', content_category: 'partners' });
+          if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'Промокод партнёра O-Live', content_category: 'partners' });
         } catch (e) {}
       })
       .catch(function () {
         jGo.disabled = false;
-        jGo.textContent = 'Создать мою ссылку';
+        jGo.textContent = 'Получить промокод';
         jError('Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.');
       });
   });
 
   function showDone(d) {
-    $('#doneTitle').textContent = 'Ссылка ' + d.nick + ' готова и уже работает';
-    $('#outLink').textContent = d.link;
-    $('#outLinkOpen').href = d.link;
+    $('#doneTitle').textContent = d.alreadyRegistered
+      ? 'У вас уже есть промокод — вот он'
+      : 'Ваш промокод готов';
+    $('#outCode').textContent = d.code;
+    $('#outCodeInline').textContent = d.code;
+    $('#outShop').textContent = d.shopUrl;
+    $('#outShopOpen').href = d.shopUrl;
     $('#outKey').textContent = d.key;
-    $('#outBoard').textContent = d.boardUrl;
     $('#joinForm').hidden = true;
     $('#joinDone').hidden = false;
     window.scrollTo(0, 0);
   }
 
-  /* копирование по кнопкам data-copy="#id" */
+  /* копирование по кнопкам data-copy="#id" или data-copy="текст" */
   document.addEventListener('click', function (e) {
     var b = e.target.closest ? e.target.closest('[data-copy]') : null;
     if (!b) return;
@@ -994,16 +946,11 @@ io.observe(el);
 
   function renderBoard(d) {
     var list = (d.partners || []).filter(function (p) { return p.isActive || p.isMe; });
-    var t = list.reduce(function (a, p) {
-      return {
-        clicks: a.clicks + p.clicks, referrals: a.referrals + p.referrals,
-        paid: a.paid + p.paid, revenue: a.revenue + p.revenue,
-        commission: a.commission + p.commission, paidOut: a.paidOut + p.paidOut,
-        balance: a.balance + p.balance
-      };
-    }, { clicks: 0, referrals: 0, paid: 0, revenue: 0, commission: 0, paidOut: 0, balance: 0 });
+    var t = d.totals || {};
 
-    var who = d.viewer && d.viewer.role === 'partner' ? ' · вы вошли как ' + esc(d.viewer.name || d.viewer.slug) : '';
+    var who = d.viewer && d.viewer.role === 'partner'
+      ? ' · вы вошли как ' + esc(d.viewer.name || '') + ' (' + esc(d.viewer.code || '') + ')'
+      : '';
     var when = '';
     try {
       when = new Intl.DateTimeFormat('ru-RU', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Asia/Almaty' })
@@ -1013,36 +960,37 @@ io.observe(el);
 
     $('#bTiles').innerHTML =
       tile('Участников', n0(list.length)) +
-      tile('Переходы по ссылкам', n0(t.clicks)) +
-      tile('Привлечено клиентов', n0(t.referrals)) +
-      tile('Продаж оплачено', n0(t.paid)) +
+      tile('Промокодов выдано', n0((d.codesTotal || 0) - (d.codesFree || 0)) + '<small>из ' + n0(d.codesTotal || 0) + '</small>') +
+      tile('Привлечено клиентов', n0(t.customers)) +
+      tile('Оплачено заказов', n0(t.paid)) +
       tile('Продано на', n0(t.revenue) + '<small>₸</small>') +
       tile('Заработали участники', n0(t.commission) + '<small>₸</small>', true);
 
     $('#bCards').innerHTML = list.map(function (p) {
       return '<div class="bcard' + (p.isMe ? ' me' : '') + '">' +
         '<div class="nm">' + esc(p.name) + (p.isMe ? '<span class="metag">это вы</span>' : '') + '</div>' +
-        '<div class="blink"><a href="' + esc(p.link) + '" target="_blank" rel="noopener">' + esc(p.link) + '</a>' +
-        '<button class="scopy" data-copy="' + esc(p.link) + '">копировать</button></div>' +
+        '<div class="blink"><a href="#/board" onclick="return false" style="cursor:default">промокод ' + esc(p.code) + '</a>' +
+        '<button class="scopy" data-copy="' + esc(p.code) + '">копировать</button></div>' +
         '<div class="bstats">' +
-          '<div class="bstat"><div class="k">Переходов</div><div class="v">' + n0(p.clicks) + '</div></div>' +
-          '<div class="bstat"><div class="k">Продаж</div><div class="v">' + n0(p.paid) + '</div></div>' +
+          '<div class="bstat"><div class="k">Клиентов</div><div class="v">' + n0(p.customers) + '</div></div>' +
+          '<div class="bstat"><div class="k">Оплачено</div><div class="v">' + n0(p.paid) + '</div></div>' +
           '<div class="bstat"><div class="k">Продано на</div><div class="v">' + n0(p.revenue) + ' <em>₸</em></div></div>' +
           '<div class="bstat earn"><div class="k">Заработал 10%</div><div class="v">' + n0(p.commission) + ' <em>₸</em></div></div>' +
         '</div></div>';
-    }).join('') || '<p style="color:var(--muted)">Пока ни одной активной ссылки.</p>';
+    }).join('') || '<p style="color:var(--muted)">Пока ни одного выданного промокода.</p>';
 
     $('#bTbody').innerHTML = list.map(function (p) {
       var avg = p.paid ? Math.round(p.revenue / p.paid) : 0;
       return '<tr' + (p.isMe ? ' class="me"' : '') + '>' +
         '<td>' + esc(p.name) + (p.isMe ? ' <span class="metag">вы</span>' : '') + '</td>' +
-        '<td>' + dash(p.clicks) + '</td><td>' + dash(p.referrals) + '</td><td>' + dash(p.paid) + '</td>' +
+        '<td>' + esc(p.code) + '</td>' +
+        '<td>' + dash(p.customers) + '</td><td>' + dash(p.paid) + '</td>' +
         '<td>' + dash(p.revenue) + '</td><td>' + dash(avg) + '</td><td>' + dash(p.commission) + '</td>' +
         '<td>' + dash(p.paidOut) + '</td><td>' + dash(p.balance) + '</td></tr>';
     }).join('');
 
     var avgT = t.paid ? Math.round(t.revenue / t.paid) : 0;
-    $('#bTfoot').innerHTML = '<tr><td>Итого</td><td>' + dash(t.clicks) + '</td><td>' + dash(t.referrals) +
+    $('#bTfoot').innerHTML = '<tr><td>Итого</td><td></td><td>' + dash(t.customers) +
       '</td><td>' + dash(t.paid) + '</td><td>' + dash(t.revenue) + '</td><td>' + dash(avgT) +
       '</td><td>' + dash(t.commission) + '</td><td>' + dash(t.paidOut) + '</td><td>' + dash(t.balance) + '</td></tr>';
   }
